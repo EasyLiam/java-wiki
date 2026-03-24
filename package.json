@@ -1,0 +1,13 @@
+{
+  "name": "java-wiki",
+  "version": "1.0.0",
+  "description": "Java后端面试知识库，每日更新",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.40"
+  }
+}

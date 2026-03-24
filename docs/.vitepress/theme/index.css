@@ -1,0 +1,33 @@
+:root {
+  --vp-c-brand-1: #3eaf7c;
+  --vp-c-brand-2: #49bd88;
+  --vp-c-brand-3: #359d6c;
+}
+
+.VPSidebar {
+  scrollbar-width: thin;
+}
+
+.vp-doc h1 {
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding-bottom: 0.3em;
+}
+
+.vp-doc h2 {
+  border-bottom: 1px solid var(--vp-c-divider-light);
+  padding-bottom: 0.3em;
+}
+
+.vp-doc h3 {
+  margin-top: 2em;
+}
+
+.vp-doc hr {
+  margin: 2em 0;
+  border-color: var(--vp-c-divider-light);
+}
+
+.vp-doc blockquote {
+  background-color: var(--vp-c-bg-soft);
+  border-left: 4px solid var(--vp-c-brand-1);
+}
