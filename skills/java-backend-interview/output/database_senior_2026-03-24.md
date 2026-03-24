@@ -1,0 +1,43 @@
+# 数据库技术 - 高级面试题
+
+> 生成时间: 2026-03-24 21:34:58
+> 题目数量: 3
+
+---
+
+## 问题 1
+
+**Q: MySQL的Change Buffer是什么？有什么优化作用？**
+
+**A:** Change Buffer缓存二级索引的修改操作(DML)，当对应页不在Buffer Pool时暂存。优化：1.减少随机IO；2.合并多次修改；3.提升写入性能。适用场景：写多读少、非唯一二级索引。注意：唯一索引不支持(需要立即检查唯一性)。MySQL8.0后支持部分索引。
+
+---
+
+## 问题 2
+
+**Q: MySQL的MVCC是如何实现的？Read View的作用？**
+
+**A:** MVCC通过undo log版本链+Read View实现。Read View包含：m_ids(活跃事务ID)、min_trx_id、max_trx_id、creator_trx_id。可见性判断：1.事务ID<min_trx_id：可见；2.事务ID>=max_trx_id：不可见；3.在m_ids中：不可见；4.不在m_ids中：可见。RC级别每次查询创建Read View，RR级别只在第一次创建。
+
+---
+
+## 问题 3
+
+**Q: MySQL的Undo Log是如何回收的？Purge线程的作用？**
+
+**A:** Undo Log回收：1.事务提交后undo log进入history list；2.Purge线程异步清理；3.清理条件：所有活跃事务ID大于undo log事务ID。Purge线程：后台线程，负责清理undo log和删除标记的记录。参数：innodb_purge_threads控制线程数，innodb_max_purge_lag控制延迟。
+
+---
+
+## 扩展学习
+
+建议结合以下资源深入学习：
+
+- 官方文档
+- 技术博客
+- 开源项目源码
+- 实际项目经验
+
+---
+
+*本文档由 Java后端面试题技能 自动生成*
