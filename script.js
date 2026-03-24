@@ -781,6 +781,9 @@ function initTopicsGrid() {
     });
 }
 
+// 保存原始滚动位置，防止滑动穿透
+let scrollPosition = 0;
+
 // 打开题目模态框
 function openTopicModal(topicId) {
     const topic = topics.find(t => t.id === topicId);
@@ -802,13 +805,27 @@ function openTopicModal(topicId) {
         `).join('');
     }
     
-    modal.classList.add('active');
+    // 修复滑动穿透 - 保存当前滚动位置并锁定
+    scrollPosition = window.pageYOffset;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.style.width = '100%';
     document.body.style.overflow = 'hidden';
+    
+    modal.classList.add('active');
 }
 
-// 格式化答案文本
+// 格式化答案文本 - 支持换行
 function formatAnswer(answer) {
-    return `<p>${answer}</p>`;
+    // 将换行转换为<p>标签，保持段落格式
+    return answer.split('\n\n').filter(p => p.trim()).map(p => {
+        p = p.trim();
+        // 如果是列表项 (以 - 或 * 开头)，保持格式
+        if (p.startsWith('- ') || p.startsWith('* ')) {
+            return `<p>${p}</p>`;
+        }
+        return `<p>${p}</p>`;
+    }).join('');
 }
 
 // 初始化事件监听
@@ -821,7 +838,13 @@ function initEventListeners() {
     
     function closeModal() {
         document.getElementById('questionModal').classList.remove('active');
+        
+        // 恢复滚动
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
         document.body.style.overflow = '';
+        window.scrollTo(0, scrollPosition);
     }
     
     // 搜索框事件
