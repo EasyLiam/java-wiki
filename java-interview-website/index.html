@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaBackend 面试题库 - 程序员进阶之路</title>
+    <meta name="description" content="专注于Java后端工程师面试题库，系统化整理Java后端知识体系，助力求职面试成功">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <i class="fab fa-java"></i>
+                <span class="brand-text">JavaBackend</span>
+            </div>
+            <nav class="navbar-nav">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#topics" class="nav-link">题库分类</a>
+                <a href="#knowledge" class="nav-link">知识体系</a>
+                <a href="#about" class="nav-link">关于</a>
+            </nav>
+            <div class="navbar-actions">
+                <button class="btn-search" id="btnSearch">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn-theme" id="btnTheme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- 搜索模态框 -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-container">
+            <div class="search-header">
+                <h2>搜索题目</h2>
+                <button class="btn-close" id="closeSearch">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-input-wrapper">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="searchInput" placeholder="输入关键词搜索面试题...">
+            </div>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Hero 区域 -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Java后端面试题库</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        系统化整理 Java 后端知识体系，每日更新最新面试题，助力你斩获心仪Offer
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#topics" class="btn btn-primary">
+                            <i class="fas fa-book-open"></i>
+                            开始刷题
+                        </a>
+                        <a href="#knowledge" class="btn btn-secondary">
+                            <i class="fas fa-map"></i>
+                            知识体系
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" id="totalQuestions">0</span>
+                            <span class="stat-label">精选题目</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="totalTopics">8</span>
+                            <span class="stat-label">知识分类</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="dailyUpdate">每日更新</span>
+                            <span class="stat-label">新鲜题目</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-card">
+                        <div class="code-header">
+                            <div class="dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="filename">InterviewQuestion.java</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><span class="keyword">public class</span> <span class="class-name">Interview</span> {
+  <span class="keyword">public static void</span> <span class="method">main</span>(String[] args) {
+    <span class="function">prepare</span>();
+    <span class="keyword">if</span> (<span class="variable">you</span>.<span class="method">study</span>()) {
+      <span class="function">getOffer</span>(); <span class="comment">// ✓ 成功上岸</span>
+    }
+  }
+}</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 题库分类 -->
+    <section class="topics section" id="topics">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">题库分类</h2>
+                <p class="section-subtitle">按知识模块分类，针对性刷题更高效</p>
+            </div>
+            <div class="topics-grid" id="topicsGrid">
+                <!-- 主题卡片会通过JS动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 题目详情模态框 -->
+    <div class="modal" id="questionModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <button class="btn-close" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+            </div>
+        </div>
+    </div>
+
+    <!-- 知识体系 -->
+    <section class="knowledge section" id="knowledge">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">知识体系</h2>
+                <p class="section-subtitle">系统化Java后端知识图谱</p>
+            </div>
+            <div class="knowledge-tree">
+                <div class="knowledge-category">
+                    <div class="category-header">
+                        <i class="fas fa-coffee"></i>
+                        <h3>核心基础</h3>
+                        <i class="fas fa-chevron-down toggle"></i>
+                    </div>
+                    <div class="category-content active">
+                        <ul class="knowledge-list">
+                            <li>Java语法基础</li>
+                            <li>集合框架</li>
+                            <li>IO/NIO</li>
+                            <li>反射与注解</li>
+                            <li>JVM内存模型</li>
+                            <li>垃圾回收算法</li>
+                            <li>类加载机制</li>
+                            <li>并发编程基础</li>
+                            <li>多线程与锁</li>
+                            <li>JUC并发包</li>
+                            <li>设计模式</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="knowledge-category">
+                    <div class="category-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>框架技术</h3>
+                        <i class="fas fa-chevron-down toggle"></i>
+                    </div>
+                    <div class="category-content active">
+                        <ul class="knowledge-list">
+                            <li>Spring IoC/AOP</li>
+                            <li>Spring Boot</li>
+                            <li>Spring Cloud</li>
+                            <li>Spring Security</li>
+                            <li>MyBatis</li>
+                            <li>MyBatis-Plus</li>
+                            <li>Netty网络编程</li>
+                            <li>Dubbo RPC</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="knowledge-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>数据存储</h3>
+                        <i class="fas fa-chevron-down toggle"></i>
+                    </div>
+                    <div class="category-content active">
+                        <ul class="knowledge-list">
+                            <li>MySQL基础与优化</li>
+                            <li>索引与事务</li>
+                            <li>Redis缓存架构</li>
+                            <li>MongoDB</li>
+                            <li>Elasticsearch</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="knowledge-category">
+                    <div class="category-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>分布式系统</h3>
+                        <i class="fas fa-chevron-down toggle"></i>
+                    </div>
+                    <div class="category-content active">
+                        <ul class="knowledge-list">
+                            <li>微服务架构设计</li>
+                            <li>分布式事务</li>
+                            <li>消息队列(Kafka/RocketMQ)</li>
+                            <li>分布式锁</li>
+                            <li>一致性算法</li>
+                            <li>服务注册与发现</li>
+                            <li>API网关</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="knowledge-category">
+                    <div class="category-header">
+                        <i class="fas fa-sitemap"></i>
+                        <h3>系统设计</h3>
+                        <i class="fas fa-chevron-down toggle"></i>
+                    </div>
+                    <div class="category-content active">
+                        <ul class="knowledge-list">
+                            <li>高并发系统设计</li>
+                            <li>高可用架构</li>
+                            <li>限流熔断降级</li>
+                            <li>分布式ID生成</li>
+                            <li>缓存雪崩/击穿/穿透</li>
+                            <li>秒杀系统设计</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>每日更新</h3>
+                    <p>每日自动爬取整理最新面试题，保持题库新鲜度</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-filter"></i>
+                    <h3>难度分级</h3>
+                    <p>初级/中级/高级/架构师四级分级，适合不同经验阶段</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-check-double"></i>
+                    <h3>详细解答</h3>
+                    <p>每道题都配有详细解答，不仅知其然更知其所以然</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 JavaBackend Interview. Built with <i class="fas fa-heart"></i> for Java Developers.</p>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部 -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
