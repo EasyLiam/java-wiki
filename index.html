@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaBackend 面试题库 - 程序员进阶之路</title>
     <meta name="description" content="专注于Java后端工程师面试题库，系统化整理Java后端知识体系，助力求职面试成功">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.cn">
+    <link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin>
+    <link href="https://fonts.googleapis.cn/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -28,6 +28,9 @@
             <div class="navbar-actions">
                 <button class="btn-search" id="btnSearch">
                     <i class="fas fa-search"></i>
+                </button>
+                <button class="btn-bookmarks" id="btnBookmarks" title="我的收藏">
+                    <i class="fas fa-bookmark"></i>
                 </button>
                 <button class="btn-theme" id="btnTheme">
                     <i class="fas fa-moon"></i>
@@ -58,6 +61,20 @@
         </div>
     </div>
 
+    <!-- 收藏模态框 -->
+    <div class="bookmarks-modal" id="bookmarksModal">
+        <div class="bookmarks-container">
+            <div class="bookmarks-header">
+                <h2>我的收藏</h2>
+                <button class="btn-close" id="closeBookmarks">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="bookmarks-content" id="bookmarksContent">
+            </div>
+        </div>
+    </div>
+
     <!-- Hero 区域 -->
     <section class="hero" id="home">
         <div class="container">
@@ -74,6 +91,10 @@
                             <i class="fas fa-book-open"></i>
                             开始刷题
                         </a>
+                        <button class="btn btn-secondary" id="btnRandom">
+                            <i class="fas fa-random"></i>
+                            随机一题
+                        </button>
                         <a href="#knowledge" class="btn btn-secondary">
                             <i class="fas fa-map"></i>
                             知识体系

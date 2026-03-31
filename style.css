@@ -146,6 +146,7 @@ body {
 }
 
 .btn-search,
+.btn-bookmarks,
 .btn-theme {
     width: 36px;
     height: 36px;
@@ -161,6 +162,7 @@ body {
 }
 
 .btn-search:hover,
+.btn-bookmarks:hover,
 .btn-theme:hover {
     background-color: var(--bg-tertiary);
     color: var(--primary-color);
@@ -718,6 +720,30 @@ body {
     margin-bottom: 0;
 }
 
+/* 收藏按钮 */
+.btn-toggle-bookmark {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--text-tertiary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+.btn-toggle-bookmark:hover {
+    background-color: var(--bg-tertiary);
+}
+
+.btn-toggle-bookmark i.fas {
+    color: var(--primary-color);
+}
+
 /* ===== 搜索模态框 ===== */
 .search-modal {
     position: fixed;
@@ -829,6 +855,129 @@ body {
 }
 
 .no-results {
+    text-align: center;
+    padding: 48px 24px;
+    color: var(--text-secondary);
+}
+
+/* 搜索关键词高亮 */
+mark {
+    background-color: rgba(22, 93, 255, 0.25);
+    color: var(--primary-color);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+/* 收藏模态框 */
+.bookmarks-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.bookmarks-modal.active {
+    display: flex;
+}
+
+.bookmarks-container {
+    background-color: var(--bg-card);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 70vh;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.bookmarks-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.bookmarks-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bookmarks-content {
+    padding: 16px 24px 24px;
+    overflow-y: auto;
+    max-height: calc(70vh - 80px);
+}
+
+.bookmark-item {
+    padding: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    transition: var(--transition);
+}
+
+.bookmark-item:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px -4px rgba(22, 93, 255, 0.15);
+}
+
+.bookmark-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6px;
+}
+
+.bookmark-item h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.bookmark-item h4:hover {
+    color: var(--primary-color);
+}
+
+.btn-remove-bookmark {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-color: transparent;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.btn-remove-bookmark:hover {
+    background-color: rgba(245, 63, 63, 0.1);
+    color: var(--accent-color);
+}
+
+.bookmark-item .topic-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 12px;
+    border-radius: var(--radius-sm);
+}
+
+.no-bookmarks {
     text-align: center;
     padding: 48px 24px;
     color: var(--text-secondary);

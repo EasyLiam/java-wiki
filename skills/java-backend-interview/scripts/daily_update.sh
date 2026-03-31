@@ -21,9 +21,34 @@ python3 "$SCRIPT_DIR/interview_gen.py" --daily 2>&1 | while IFS= read -r line; d
     log "$line"
 done
 
+# 同步题目数据到GitHub Pages网站
+log "同步数据到GitHub Pages..."
+python3 "$SCRIPT_DIR/sync_to_website.py" 2>&1 | while IFS= read -r line; do
+    log "$line"
+done
+
 log "========================================"
 log "每日更新完成"
 log "========================================"
+
+# 推送到GitHub
+log "开始推送到GitHub..."
+cd /home/liam/.openclaw/workspace
+git add . >> "$LOG_FILE" 2>&1
+git status >> "$LOG_FILE" 2>&1
+
+# 检查是否有变更
+if git diff --cached --quiet; then
+    log "没有文件变更，跳过提交"
+else
+    git commit -m "docs: daily update $(date +%Y-%m-%d)" >> "$LOG_FILE" 2>&1
+    git push origin master >> "$LOG_FILE" 2>&1
+    if [ $? -eq 0 ]; then
+        log "GitHub推送成功"
+    else
+        log "GitHub推送失败，请检查配置"
+    fi
+fi
 
 find "$LOG_DIR" -name "daily_update_*.log" -mtime +30 -delete
 
