@@ -62,3 +62,322 @@ hint:
 hint: 	git rm --cached card2a4
 hint: 
 hint: See "git help submodule" for more information.
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    BOOTSTRAP.md
+	modified:   USER.md
+	new file:   card2a4
+	new file:   fund_daily_report.py
+	modified:   memory/2026-03-24-fund-holdings.md
+	modified:   script.js
+	new file:   skills/1password/SKILL.md
+	new file:   skills/1password/references/cli-examples.md
+	new file:   skills/1password/references/get-started.md
+	new file:   skills/OCR_SKILL.md
+	new file:   skills/SKILL.md
+	new file:   skills/_meta.json
+	new file:   skills/agent-reach/SKILL.md
+	new file:   skills/apple-notes/SKILL.md
+	new file:   skills/apple-reminders/SKILL.md
+	new file:   skills/bear-notes/SKILL.md
+	new file:   skills/blogwatcher/SKILL.md
+	new file:   skills/blucli/SKILL.md
+	new file:   skills/bluebubbles/SKILL.md
+	new file:   skills/camsnap/SKILL.md
+	new file:   skills/canvas/SKILL.md
+	new file:   skills/clawhub/SKILL.md
+	new file:   skills/coding-agent/SKILL.md
+	new file:   skills/discord/SKILL.md
+	new file:   skills/eightctl/SKILL.md
+	new file:   skills/find-skills/SKILL.md
+	new file:   skills/find-skills/find_skills.plugin.json
+	new file:   skills/find-skills/scripts/find-skills.py
+	new file:   skills/gemini/SKILL.md
+	new file:   skills/gh-issues/SKILL.md
+	new file:   skills/gifgrep/SKILL.md
+	new file:   skills/github/SKILL.md
+	new file:   skills/gog/SKILL.md
+	new file:   skills/goplaces/SKILL.md
+	new file:   skills/healthcheck/SKILL.md
+	new file:   skills/himalaya/SKILL.md
+	new file:   skills/himalaya/references/configuration.md
+	new file:   skills/himalaya/references/message-composition.md
+	new file:   skills/imsg/SKILL.md
+	modified:   skills/java-backend-interview/data/questions.json
+	new file:   skills/java-backend-interview/logs/daily_update_20260325.log
+	new file:   skills/java-backend-interview/logs/daily_update_20260326.log
+	new file:   skills/java-backend-interview/logs/daily_update_20260328.log
+	new file:   skills/java-backend-interview/logs/daily_update_20260331.log
+	new file:   skills/java-backend-interview/logs/daily_update_20260401.log
+	new file:   skills/java-backend-interview/output/cache_senior_2026-03-25.md
+	new file:   skills/java-backend-interview/output/cache_senior_2026-03-26.md
+	new file:   skills/java-backend-interview/output/cache_senior_2026-03-28.md
+	new file:   skills/java-backend-interview/output/cache_senior_2026-03-31.md
+	new file:   skills/java-backend-interview/output/cache_senior_2026-04-01.md
+	new file:   skills/java-backend-interview/output/concurrent_senior_2026-03-25.md
+	new file:   skills/java-backend-interview/output/concurrent_senior_2026-03-26.md
+	new file:   skills/java-backend-interview/output/concurrent_senior_2026-03-28.md
+	new file:   skills/java-backend-interview/output/concurrent_senior_2026-03-31.md
+	new file:   skills/java-backend-interview/output/concurrent_senior_2026-04-01.md
+	new file:   skills/java-backend-interview/output/database_senior_2026-03-25.md
+	new file:   skills/java-backend-interview/output/database_senior_2026-03-26.md
+	new file:   skills/java-backend-interview/output/database_senior_2026-03-28.md
+	new file:   skills/java-backend-interview/output/database_senior_2026-03-31.md
+	new file:   skills/java-backend-interview/output/database_senior_2026-04-01.md
+	new file:   skills/java-backend-interview/output/design_senior_2026-03-25.md
+	new file:   skills/java-backend-interview/output/design_senior_2026-03-26.md
+	new file:   skills/java-backend-interview/output/design_senior_2026-03-28.md
+	new file:   skills/java-backend-interview/output/design_senior_2026-03-31.md
+	new file:   skills/java-backend-interview/output/design_senior_2026-04-01.md
+	new file:   skills/java-backend-interview/output/distributed_senior_2026-03-25.md
+	new file:   skills/java-backend-interview/output/distributed_senior_2026-03-26.md
+	new file:   skills/java-backend-interview/output/distributed_senior_2026-03-28.md
+	new file:   skills/java-backend-interview/output/distributed_senior_2026-03-31.md
+	new file:   skills/java-backend-interview/output/distributed_senior_2026-04-01.md
+	new file:   skills/java-backend-interview/output/java_senior_2026-03-25.md
+	new file:   skills/java-backend-interview/output/java_senior_2026-03-26.md
+	new file:   skills/java-backend-interview/output/java_senior_2026-03-28.md
+	new file:   skills/java-backend-interview/output/java_senior_2026-03-31.md
+	new file:   skills/java-backend-interview/output/java_senior_2026-04-01.md
+	new file:   skills/java-backend-interview/output/jvm_senior_2026-03-25.md
+	new file:   skills/java-backend-interview/output/jvm_senior_2026-03-26.md
+	new file:   skills/java-backend-interview/output/jvm_senior_2026-03-28.md
+	new file:   skills/java-backend-interview/output/jvm_senior_2026-03-31.md
+	new file:   skills/java-backend-interview/output/jvm_senior_2026-04-01.md
+	new file:   skills/java-backend-interview/output/spring_senior_2026-03-25.md
+	new file:   skills/java-backend-interview/output/spring_senior_2026-03-26.md
+	new file:   skills/java-backend-interview/output/spring_senior_2026-03-28.md
+	new file:   skills/java-backend-interview/output/spring_senior_2026-03-31.md
+	new file:   skills/java-backend-interview/output/spring_senior_2026-04-01.md
+	modified:   skills/java-backend-interview/scripts/daily_update_v2.sh
+	new file:   skills/java-backend-interview/scripts/generate_frontend_js.py
+	new file:   skills/mcporter/SKILL.md
+	new file:   skills/model-usage/SKILL.md
+	new file:   skills/model-usage/references/codexbar-cli.md
+	new file:   skills/model-usage/scripts/model_usage.py
+	new file:   skills/model-usage/scripts/test_model_usage.py
+	new file:   skills/nano-banana-pro/SKILL.md
+	new file:   skills/nano-banana-pro/scripts/generate_image.py
+	new file:   skills/nano-banana-pro/scripts/test_generate_image.py
+	new file:   skills/nano-pdf/SKILL.md
+	new file:   skills/notion/SKILL.md
+	new file:   skills/obsidian/SKILL.md
+	new file:   skills/ocr.plugin.json
+	new file:   skills/openai-image-gen/SKILL.md
+	new file:   skills/openai-image-gen/scripts/gen.py
+	new file:   skills/openai-image-gen/scripts/test_gen.py
+	new file:   skills/openai-whisper-api/SKILL.md
+	new file:   skills/openai-whisper-api/scripts/transcribe.sh
+	new file:   skills/openai-whisper/SKILL.md
+	new file:   skills/openhue/SKILL.md
+	new file:   skills/oracle/SKILL.md
+	new file:   skills/ordercli/SKILL.md
+	new file:   skills/peekaboo/SKILL.md
+	new file:   skills/sag/SKILL.md
+	new file:   skills/scripts/ocr_skill.py
+	new file:   skills/scripts/tavily_search.py
+	new file:   skills/self-improving-agent/SKILL.md
+	new file:   skills/self-improving-agent/scripts/self-improving-agent.py
+	new file:   skills/self-improving-agent/self_improving_agent.plugin.json
+	new file:   skills/session-logs/SKILL.md
+	new file:   skills/sherpa-onnx-tts/SKILL.md
+	new file:   skills/sherpa-onnx-tts/bin/sherpa-onnx-tts
+	new file:   skills/skill-creator/SKILL.md
+	new file:   skills/skill-creator/license.txt
+	new file:   skills/skill-creator/scripts/init_skill.py
+	new file:   skills/skill-creator/scripts/package_skill.py
+	new file:   skills/skill-creator/scripts/quick_validate.py
+	new file:   skills/skill-creator/scripts/test_package_skill.py
+	new file:   skills/skill-creator/scripts/test_quick_validate.py
+	new file:   skills/slack/SKILL.md
+	new file:   skills/songsee/SKILL.md
+	new file:   skills/sonoscli/SKILL.md
+	new file:   skills/spotify-player/SKILL.md
+	new file:   skills/stock-fund-query/SKILL.md
+	new file:   skills/stock-fund-query/scripts/__pycache__/fund_realtime.cpython-312.pyc
+	new file:   skills/stock-fund-query/scripts/fund_predict.py
+	new file:   skills/stock-fund-query/scripts/fund_realtime.py
+	new file:   skills/stock-fund-query/scripts/stock_query.py
+	new file:   skills/stock-fund-query/stock_fund_query.plugin.json
+	new file:   skills/summarize/SKILL.md
+	new file:   skills/tavily-search/SKILL.md
+	new file:   skills/tavily-search/scripts/tavily_search.py
+	new file:   skills/tavily-search/tavily_search.plugin.json
+	new file:   skills/things-mac/SKILL.md
+	new file:   skills/tmux/SKILL.md
+	new file:   skills/tmux/scripts/find-sessions.sh
+	new file:   skills/tmux/scripts/wait-for-text.sh
+	new file:   skills/trello/SKILL.md
+	new file:   skills/video-frames/SKILL.md
+	new file:   skills/video-frames/scripts/frame.sh
+	new file:   skills/voice-call/SKILL.md
+	new file:   skills/wacli/SKILL.md
+	new file:   skills/weather/SKILL.md
+	new file:   skills/xurl/SKILL.md
+	new file:   tmp/fund_report.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   card2a4 (modified content, untracked content)
+
+[master 8a1855f] docs: daily update 2026-04-01
+ 151 files changed, 23152 insertions(+), 1226 deletions(-)
+ delete mode 100644 BOOTSTRAP.md
+ create mode 160000 card2a4
+ create mode 100644 fund_daily_report.py
+ create mode 100644 skills/1password/SKILL.md
+ create mode 100644 skills/1password/references/cli-examples.md
+ create mode 100644 skills/1password/references/get-started.md
+ create mode 100755 skills/OCR_SKILL.md
+ create mode 100644 skills/SKILL.md
+ create mode 100644 skills/_meta.json
+ create mode 100644 skills/agent-reach/SKILL.md
+ create mode 100644 skills/apple-notes/SKILL.md
+ create mode 100644 skills/apple-reminders/SKILL.md
+ create mode 100644 skills/bear-notes/SKILL.md
+ create mode 100644 skills/blogwatcher/SKILL.md
+ create mode 100644 skills/blucli/SKILL.md
+ create mode 100644 skills/bluebubbles/SKILL.md
+ create mode 100644 skills/camsnap/SKILL.md
+ create mode 100644 skills/canvas/SKILL.md
+ create mode 100644 skills/clawhub/SKILL.md
+ create mode 100644 skills/coding-agent/SKILL.md
+ create mode 100644 skills/discord/SKILL.md
+ create mode 100644 skills/eightctl/SKILL.md
+ create mode 100755 skills/find-skills/SKILL.md
+ create mode 100755 skills/find-skills/find_skills.plugin.json
+ create mode 100755 skills/find-skills/scripts/find-skills.py
+ create mode 100644 skills/gemini/SKILL.md
+ create mode 100644 skills/gh-issues/SKILL.md
+ create mode 100644 skills/gifgrep/SKILL.md
+ create mode 100644 skills/github/SKILL.md
+ create mode 100644 skills/gog/SKILL.md
+ create mode 100644 skills/goplaces/SKILL.md
+ create mode 100644 skills/healthcheck/SKILL.md
+ create mode 100644 skills/himalaya/SKILL.md
+ create mode 100644 skills/himalaya/references/configuration.md
+ create mode 100644 skills/himalaya/references/message-composition.md
+ create mode 100644 skills/imsg/SKILL.md
+ create mode 100644 skills/java-backend-interview/logs/daily_update_20260325.log
+ create mode 100644 skills/java-backend-interview/logs/daily_update_20260326.log
+ create mode 100644 skills/java-backend-interview/logs/daily_update_20260328.log
+ create mode 100644 skills/java-backend-interview/logs/daily_update_20260331.log
+ create mode 100644 skills/java-backend-interview/logs/daily_update_20260401.log
+ create mode 100644 skills/java-backend-interview/output/cache_senior_2026-03-25.md
+ create mode 100644 skills/java-backend-interview/output/cache_senior_2026-03-26.md
+ create mode 100644 skills/java-backend-interview/output/cache_senior_2026-03-28.md
+ create mode 100644 skills/java-backend-interview/output/cache_senior_2026-03-31.md
+ create mode 100644 skills/java-backend-interview/output/cache_senior_2026-04-01.md
+ create mode 100644 skills/java-backend-interview/output/concurrent_senior_2026-03-25.md
+ create mode 100644 skills/java-backend-interview/output/concurrent_senior_2026-03-26.md
+ create mode 100644 skills/java-backend-interview/output/concurrent_senior_2026-03-28.md
+ create mode 100644 skills/java-backend-interview/output/concurrent_senior_2026-03-31.md
+ create mode 100644 skills/java-backend-interview/output/concurrent_senior_2026-04-01.md
+ create mode 100644 skills/java-backend-interview/output/database_senior_2026-03-25.md
+ create mode 100644 skills/java-backend-interview/output/database_senior_2026-03-26.md
+ create mode 100644 skills/java-backend-interview/output/database_senior_2026-03-28.md
+ create mode 100644 skills/java-backend-interview/output/database_senior_2026-03-31.md
+ create mode 100644 skills/java-backend-interview/output/database_senior_2026-04-01.md
+ create mode 100644 skills/java-backend-interview/output/design_senior_2026-03-25.md
+ create mode 100644 skills/java-backend-interview/output/design_senior_2026-03-26.md
+ create mode 100644 skills/java-backend-interview/output/design_senior_2026-03-28.md
+ create mode 100644 skills/java-backend-interview/output/design_senior_2026-03-31.md
+ create mode 100644 skills/java-backend-interview/output/design_senior_2026-04-01.md
+ create mode 100644 skills/java-backend-interview/output/distributed_senior_2026-03-25.md
+ create mode 100644 skills/java-backend-interview/output/distributed_senior_2026-03-26.md
+ create mode 100644 skills/java-backend-interview/output/distributed_senior_2026-03-28.md
+ create mode 100644 skills/java-backend-interview/output/distributed_senior_2026-03-31.md
+ create mode 100644 skills/java-backend-interview/output/distributed_senior_2026-04-01.md
+ create mode 100644 skills/java-backend-interview/output/java_senior_2026-03-25.md
+ create mode 100644 skills/java-backend-interview/output/java_senior_2026-03-26.md
+ create mode 100644 skills/java-backend-interview/output/java_senior_2026-03-28.md
+ create mode 100644 skills/java-backend-interview/output/java_senior_2026-03-31.md
+ create mode 100644 skills/java-backend-interview/output/java_senior_2026-04-01.md
+ create mode 100644 skills/java-backend-interview/output/jvm_senior_2026-03-25.md
+ create mode 100644 skills/java-backend-interview/output/jvm_senior_2026-03-26.md
+ create mode 100644 skills/java-backend-interview/output/jvm_senior_2026-03-28.md
+ create mode 100644 skills/java-backend-interview/output/jvm_senior_2026-03-31.md
+ create mode 100644 skills/java-backend-interview/output/jvm_senior_2026-04-01.md
+ create mode 100644 skills/java-backend-interview/output/spring_senior_2026-03-25.md
+ create mode 100644 skills/java-backend-interview/output/spring_senior_2026-03-26.md
+ create mode 100644 skills/java-backend-interview/output/spring_senior_2026-03-28.md
+ create mode 100644 skills/java-backend-interview/output/spring_senior_2026-03-31.md
+ create mode 100644 skills/java-backend-interview/output/spring_senior_2026-04-01.md
+ create mode 100755 skills/java-backend-interview/scripts/generate_frontend_js.py
+ create mode 100644 skills/mcporter/SKILL.md
+ create mode 100644 skills/model-usage/SKILL.md
+ create mode 100644 skills/model-usage/references/codexbar-cli.md
+ create mode 100644 skills/model-usage/scripts/model_usage.py
+ create mode 100644 skills/model-usage/scripts/test_model_usage.py
+ create mode 100644 skills/nano-banana-pro/SKILL.md
+ create mode 100755 skills/nano-banana-pro/scripts/generate_image.py
+ create mode 100644 skills/nano-banana-pro/scripts/test_generate_image.py
+ create mode 100644 skills/nano-pdf/SKILL.md
+ create mode 100644 skills/notion/SKILL.md
+ create mode 100644 skills/obsidian/SKILL.md
+ create mode 100755 skills/ocr.plugin.json
+ create mode 100644 skills/openai-image-gen/SKILL.md
+ create mode 100644 skills/openai-image-gen/scripts/gen.py
+ create mode 100644 skills/openai-image-gen/scripts/test_gen.py
+ create mode 100644 skills/openai-whisper-api/SKILL.md
+ create mode 100644 skills/openai-whisper-api/scripts/transcribe.sh
+ create mode 100644 skills/openai-whisper/SKILL.md
+ create mode 100644 skills/openhue/SKILL.md
+ create mode 100644 skills/oracle/SKILL.md
+ create mode 100644 skills/ordercli/SKILL.md
+ create mode 100644 skills/peekaboo/SKILL.md
+ create mode 100644 skills/sag/SKILL.md
+ create mode 100755 skills/scripts/ocr_skill.py
+ create mode 100644 skills/scripts/tavily_search.py
+ create mode 100755 skills/self-improving-agent/SKILL.md
+ create mode 100755 skills/self-improving-agent/scripts/self-improving-agent.py
+ create mode 100755 skills/self-improving-agent/self_improving_agent.plugin.json
+ create mode 100644 skills/session-logs/SKILL.md
+ create mode 100644 skills/sherpa-onnx-tts/SKILL.md
+ create mode 100755 skills/sherpa-onnx-tts/bin/sherpa-onnx-tts
+ create mode 100644 skills/skill-creator/SKILL.md
+ create mode 100644 skills/skill-creator/license.txt
+ create mode 100644 skills/skill-creator/scripts/init_skill.py
+ create mode 100644 skills/skill-creator/scripts/package_skill.py
+ create mode 100644 skills/skill-creator/scripts/quick_validate.py
+ create mode 100644 skills/skill-creator/scripts/test_package_skill.py
+ create mode 100644 skills/skill-creator/scripts/test_quick_validate.py
+ create mode 100644 skills/slack/SKILL.md
+ create mode 100644 skills/songsee/SKILL.md
+ create mode 100644 skills/sonoscli/SKILL.md
+ create mode 100644 skills/spotify-player/SKILL.md
+ create mode 100644 skills/stock-fund-query/SKILL.md
+ create mode 100644 skills/stock-fund-query/scripts/__pycache__/fund_realtime.cpython-312.pyc
+ create mode 100755 skills/stock-fund-query/scripts/fund_predict.py
+ create mode 100644 skills/stock-fund-query/scripts/fund_realtime.py
+ create mode 100755 skills/stock-fund-query/scripts/stock_query.py
+ create mode 100755 skills/stock-fund-query/stock_fund_query.plugin.json
+ create mode 100644 skills/summarize/SKILL.md
+ create mode 100755 skills/tavily-search/SKILL.md
+ create mode 100755 skills/tavily-search/scripts/tavily_search.py
+ create mode 100755 skills/tavily-search/tavily_search.plugin.json
+ create mode 100644 skills/things-mac/SKILL.md
+ create mode 100644 skills/tmux/SKILL.md
+ create mode 100755 skills/tmux/scripts/find-sessions.sh
+ create mode 100755 skills/tmux/scripts/wait-for-text.sh
+ create mode 100644 skills/trello/SKILL.md
+ create mode 100644 skills/video-frames/SKILL.md
+ create mode 100644 skills/video-frames/scripts/frame.sh
+ create mode 100644 skills/voice-call/SKILL.md
+ create mode 100644 skills/wacli/SKILL.md
+ create mode 100644 skills/weather/SKILL.md
+ create mode 100644 skills/xurl/SKILL.md
+ create mode 100644 tmp/fund_report.py
+ssh: connect to host github.com port 22: Connection refused
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[2026-04-01 08:00:01] GitHub推送失败，请检查配置
+[2026-04-01 08:00:01] 清理30天前的日志文件完成
