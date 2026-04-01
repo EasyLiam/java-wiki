@@ -1,0 +1,344 @@
+[2026-03-25 08:00:01] ========================================
+[2026-03-25 08:00:01] 开始每日高质量面试题更新
+[2026-03-25 08:00:01] ========================================
+[2026-03-25 08:00:01] 
+[2026-03-25 08:00:01] ============================================================
+[2026-03-25 08:00:01] 🔄 每日高质量面试题更新
+[2026-03-25 08:00:01] ============================================================
+[2026-03-25 08:00:01] 
+[2026-03-25 08:00:01] 正在更新 java...
+[2026-03-25 08:00:01]   ✅ 新增 0 道高质量题目，生成文档: java_senior_2026-03-25.md
+[2026-03-25 08:00:01] 正在更新 jvm...
+[2026-03-25 08:00:01]   ✅ 新增 0 道高质量题目，生成文档: jvm_senior_2026-03-25.md
+[2026-03-25 08:00:01] 正在更新 concurrent...
+[2026-03-25 08:00:01]   ✅ 新增 0 道高质量题目，生成文档: concurrent_senior_2026-03-25.md
+[2026-03-25 08:00:01] 正在更新 spring...
+[2026-03-25 08:00:01]   ✅ 新增 0 道高质量题目，生成文档: spring_senior_2026-03-25.md
+[2026-03-25 08:00:01] 正在更新 database...
+[2026-03-25 08:00:01]   ✅ 新增 0 道高质量题目，生成文档: database_senior_2026-03-25.md
+[2026-03-25 08:00:01] 正在更新 cache...
+[2026-03-25 08:00:01]   ✅ 新增 0 道高质量题目，生成文档: cache_senior_2026-03-25.md
+[2026-03-25 08:00:01] 正在更新 distributed...
+[2026-03-25 08:00:01]   ✅ 新增 0 道高质量题目，生成文档: distributed_senior_2026-03-25.md
+[2026-03-25 08:00:01] 正在更新 design...
+[2026-03-25 08:00:01]   ✅ 新增 0 道高质量题目，生成文档: design_senior_2026-03-25.md
+[2026-03-25 08:00:01] 
+[2026-03-25 08:00:01] ============================================================
+[2026-03-25 08:00:01] 📊 更新完成
+[2026-03-25 08:00:01]   总新增题目: 0
+[2026-03-25 08:00:01]   生成文档数: 8
+[2026-03-25 08:00:01]   质量等级: 高质量(已核实)
+[2026-03-25 08:00:01] ============================================================
+[2026-03-25 08:00:01] 
+[2026-03-25 08:00:01] 📄 生成的文档:
+[2026-03-25 08:00:01]   - /root/.openclaw/skills/java-backend-interview/output/java_senior_2026-03-25.md
+[2026-03-25 08:00:01]   - /root/.openclaw/skills/java-backend-interview/output/jvm_senior_2026-03-25.md
+[2026-03-25 08:00:01]   - /root/.openclaw/skills/java-backend-interview/output/concurrent_senior_2026-03-25.md
+[2026-03-25 08:00:01]   - /root/.openclaw/skills/java-backend-interview/output/spring_senior_2026-03-25.md
+[2026-03-25 08:00:01]   - /root/.openclaw/skills/java-backend-interview/output/database_senior_2026-03-25.md
+[2026-03-25 08:00:01]   - /root/.openclaw/skills/java-backend-interview/output/cache_senior_2026-03-25.md
+[2026-03-25 08:00:01]   - /root/.openclaw/skills/java-backend-interview/output/distributed_senior_2026-03-25.md
+[2026-03-25 08:00:01]   - /root/.openclaw/skills/java-backend-interview/output/design_senior_2026-03-25.md
+[2026-03-25 08:00:01] 
+[2026-03-25 08:00:01] ========================================
+[2026-03-25 08:00:01] 每日更新完成
+[2026-03-25 08:00:01] ========================================
+[2026-03-25 08:00:01] 开始生成前端网站数据...
+[2026-03-25 08:00:01] 开始生成前端JavaScript数据...
+[2026-03-25 08:00:01] ✓ 生成完成！总共 165 道题目
+[2026-03-25 08:00:01] ✓ 输出文件: /home/liam/.openclaw/workspace/script.js
+[2026-03-25 08:00:01] 开始推送到GitHub...
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .clawhub/lock.json
+	new file:   AGENTS.md
+	new file:   BOOTSTRAP.md
+	new file:   HEARTBEAT.md
+	new file:   IDENTITY.md
+	new file:   README.md
+	new file:   SOUL.md
+	new file:   TOOLS.md
+	new file:   USER.md
+	new file:   analyze_xlsx.py
+	new file:   company_logos/nvidia.svg
+	new file:   export_result.py
+	new file:   java-interview-website/README.md
+	new file:   java-interview-website/index.html
+	new file:   java-interview-website/script.js
+	new file:   java-interview-website/style.css
+	new file:   memory/2026-03-24-fund-holdings.md
+	new file:   output/fund_analysis_2026-03-13.md
+	new file:   output/fund_daily_report_2026-03-24.md
+	modified:   script.js
+	new file:   scripts/__pycache__/get_fund_valuation.cpython-312.pyc
+	new file:   scripts/batch_fund_predict.py
+	new file:   scripts/calculate_fund_profit.py
+	new file:   scripts/get_fund_realtime.py
+	new file:   scripts/get_fund_valuation.py
+	new file:   skills/capability-evolver/.clawhub/origin.json
+	new file:   skills/capability-evolver/CONTRIBUTING.md
+	new file:   skills/capability-evolver/README.md
+	new file:   skills/capability-evolver/README.zh-CN.md
+	new file:   skills/capability-evolver/SKILL.md
+	new file:   skills/capability-evolver/_meta.json
+	new file:   skills/capability-evolver/assets/gep/capsules.json
+	new file:   skills/capability-evolver/assets/gep/genes.json
+	new file:   skills/capability-evolver/index.js
+	new file:   skills/capability-evolver/package.json
+	new file:   skills/capability-evolver/scripts/a2a_export.js
+	new file:   skills/capability-evolver/scripts/a2a_ingest.js
+	new file:   skills/capability-evolver/scripts/a2a_promote.js
+	new file:   skills/capability-evolver/scripts/analyze_by_skill.js
+	new file:   skills/capability-evolver/scripts/build_public.js
+	new file:   skills/capability-evolver/scripts/extract_log.js
+	new file:   skills/capability-evolver/scripts/generate_history.js
+	new file:   skills/capability-evolver/scripts/gep_append_event.js
+	new file:   skills/capability-evolver/scripts/gep_personality_report.js
+	new file:   skills/capability-evolver/scripts/human_report.js
+	new file:   skills/capability-evolver/scripts/publish_public.js
+	new file:   skills/capability-evolver/scripts/recover_loop.js
+	new file:   skills/capability-evolver/scripts/suggest_version.js
+	new file:   skills/capability-evolver/scripts/validate-modules.js
+	new file:   skills/capability-evolver/src/canary.js
+	new file:   skills/capability-evolver/src/evolve.js
+	new file:   skills/capability-evolver/src/gep/a2a.js
+	new file:   skills/capability-evolver/src/gep/a2aProtocol.js
+	new file:   skills/capability-evolver/src/gep/analyzer.js
+	new file:   skills/capability-evolver/src/gep/assetCallLog.js
+	new file:   skills/capability-evolver/src/gep/assetStore.js
+	new file:   skills/capability-evolver/src/gep/assets.js
+	new file:   skills/capability-evolver/src/gep/bridge.js
+	new file:   skills/capability-evolver/src/gep/candidates.js
+	new file:   skills/capability-evolver/src/gep/contentHash.js
+	new file:   skills/capability-evolver/src/gep/deviceId.js
+	new file:   skills/capability-evolver/src/gep/envFingerprint.js
+	new file:   skills/capability-evolver/src/gep/executionTrace.js
+	new file:   skills/capability-evolver/src/gep/hubReview.js
+	new file:   skills/capability-evolver/src/gep/hubSearch.js
+	new file:   skills/capability-evolver/src/gep/issueReporter.js
+	new file:   skills/capability-evolver/src/gep/learningSignals.js
+	new file:   skills/capability-evolver/src/gep/llmReview.js
+	new file:   skills/capability-evolver/src/gep/memoryGraph.js
+	new file:   skills/capability-evolver/src/gep/memoryGraphAdapter.js
+	new file:   skills/capability-evolver/src/gep/mutation.js
+	new file:   skills/capability-evolver/src/gep/narrativeMemory.js
+	new file:   skills/capability-evolver/src/gep/paths.js
+	new file:   skills/capability-evolver/src/gep/personality.js
+	new file:   skills/capability-evolver/src/gep/prompt.js
+	new file:   skills/capability-evolver/src/gep/questionGenerator.js
+	new file:   skills/capability-evolver/src/gep/reflection.js
+	new file:   skills/capability-evolver/src/gep/sanitize.js
+	new file:   skills/capability-evolver/src/gep/selector.js
+	new file:   skills/capability-evolver/src/gep/signals.js
+	new file:   skills/capability-evolver/src/gep/skillDistiller.js
+	new file:   skills/capability-evolver/src/gep/skillPublisher.js
+	new file:   skills/capability-evolver/src/gep/solidify.js
+	new file:   skills/capability-evolver/src/gep/strategy.js
+	new file:   skills/capability-evolver/src/gep/taskReceiver.js
+	new file:   skills/capability-evolver/src/gep/validationReport.js
+	new file:   skills/capability-evolver/src/ops/cleanup.js
+	new file:   skills/capability-evolver/src/ops/commentary.js
+	new file:   skills/capability-evolver/src/ops/health_check.js
+	new file:   skills/capability-evolver/src/ops/index.js
+	new file:   skills/capability-evolver/src/ops/innovation.js
+	new file:   skills/capability-evolver/src/ops/lifecycle.js
+	new file:   skills/capability-evolver/src/ops/self_repair.js
+	new file:   skills/capability-evolver/src/ops/skills_monitor.js
+	new file:   skills/capability-evolver/src/ops/trigger.js
+	new file:   skills/capability-evolver/test/a2aProtocol.test.js
+	new file:   skills/capability-evolver/test/candidates.test.js
+	new file:   skills/capability-evolver/test/contentHash.test.js
+	new file:   skills/capability-evolver/test/envFingerprint.test.js
+	new file:   skills/capability-evolver/test/evolvePolicy.test.js
+	new file:   skills/capability-evolver/test/loopMode.test.js
+	new file:   skills/capability-evolver/test/mutation.test.js
+	new file:   skills/capability-evolver/test/sanitize.test.js
+	new file:   skills/capability-evolver/test/selector.test.js
+	new file:   skills/capability-evolver/test/signals.test.js
+	new file:   skills/capability-evolver/test/skillDistiller.test.js
+	new file:   skills/capability-evolver/test/solidifyLearning.test.js
+	new file:   skills/capability-evolver/test/strategy.test.js
+	new file:   skills/capability-evolver/test/validationReport.test.js
+	new file:   "\347\273\237\350\256\241\347\273\223\346\236\234.xlsx"
+
+[master 0fea13e] docs: daily update 2026-03-25
+ Committer: root <root@NJZF-XTATHCZYM.localdomain>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 110 files changed, 22421 insertions(+), 26 deletions(-)
+ create mode 100644 .clawhub/lock.json
+ create mode 100644 AGENTS.md
+ create mode 100644 BOOTSTRAP.md
+ create mode 100644 HEARTBEAT.md
+ create mode 100644 IDENTITY.md
+ create mode 100644 README.md
+ create mode 100644 SOUL.md
+ create mode 100644 TOOLS.md
+ create mode 100644 USER.md
+ create mode 100644 analyze_xlsx.py
+ create mode 100644 company_logos/nvidia.svg
+ create mode 100644 export_result.py
+ create mode 100644 java-interview-website/README.md
+ create mode 100644 java-interview-website/index.html
+ create mode 100644 java-interview-website/script.js
+ create mode 100644 java-interview-website/style.css
+ create mode 100644 memory/2026-03-24-fund-holdings.md
+ create mode 100644 output/fund_analysis_2026-03-13.md
+ create mode 100644 output/fund_daily_report_2026-03-24.md
+ create mode 100644 scripts/__pycache__/get_fund_valuation.cpython-312.pyc
+ create mode 100644 scripts/batch_fund_predict.py
+ create mode 100644 scripts/calculate_fund_profit.py
+ create mode 100644 scripts/get_fund_realtime.py
+ create mode 100644 scripts/get_fund_valuation.py
+ create mode 100644 skills/capability-evolver/.clawhub/origin.json
+ create mode 100644 skills/capability-evolver/CONTRIBUTING.md
+ create mode 100644 skills/capability-evolver/README.md
+ create mode 100644 skills/capability-evolver/README.zh-CN.md
+ create mode 100644 skills/capability-evolver/SKILL.md
+ create mode 100644 skills/capability-evolver/_meta.json
+ create mode 100644 skills/capability-evolver/assets/gep/capsules.json
+ create mode 100644 skills/capability-evolver/assets/gep/genes.json
+ create mode 100644 skills/capability-evolver/index.js
+ create mode 100644 skills/capability-evolver/package.json
+ create mode 100644 skills/capability-evolver/scripts/a2a_export.js
+ create mode 100644 skills/capability-evolver/scripts/a2a_ingest.js
+ create mode 100644 skills/capability-evolver/scripts/a2a_promote.js
+ create mode 100644 skills/capability-evolver/scripts/analyze_by_skill.js
+ create mode 100644 skills/capability-evolver/scripts/build_public.js
+ create mode 100644 skills/capability-evolver/scripts/extract_log.js
+ create mode 100644 skills/capability-evolver/scripts/generate_history.js
+ create mode 100644 skills/capability-evolver/scripts/gep_append_event.js
+ create mode 100644 skills/capability-evolver/scripts/gep_personality_report.js
+ create mode 100644 skills/capability-evolver/scripts/human_report.js
+ create mode 100644 skills/capability-evolver/scripts/publish_public.js
+ create mode 100644 skills/capability-evolver/scripts/recover_loop.js
+ create mode 100644 skills/capability-evolver/scripts/suggest_version.js
+ create mode 100644 skills/capability-evolver/scripts/validate-modules.js
+ create mode 100644 skills/capability-evolver/src/canary.js
+ create mode 100644 skills/capability-evolver/src/evolve.js
+ create mode 100644 skills/capability-evolver/src/gep/a2a.js
+ create mode 100644 skills/capability-evolver/src/gep/a2aProtocol.js
+ create mode 100644 skills/capability-evolver/src/gep/analyzer.js
+ create mode 100644 skills/capability-evolver/src/gep/assetCallLog.js
+ create mode 100644 skills/capability-evolver/src/gep/assetStore.js
+ create mode 100644 skills/capability-evolver/src/gep/assets.js
+ create mode 100644 skills/capability-evolver/src/gep/bridge.js
+ create mode 100644 skills/capability-evolver/src/gep/candidates.js
+ create mode 100644 skills/capability-evolver/src/gep/contentHash.js
+ create mode 100644 skills/capability-evolver/src/gep/deviceId.js
+ create mode 100644 skills/capability-evolver/src/gep/envFingerprint.js
+ create mode 100644 skills/capability-evolver/src/gep/executionTrace.js
+ create mode 100644 skills/capability-evolver/src/gep/hubReview.js
+ create mode 100644 skills/capability-evolver/src/gep/hubSearch.js
+ create mode 100644 skills/capability-evolver/src/gep/issueReporter.js
+ create mode 100644 skills/capability-evolver/src/gep/learningSignals.js
+ create mode 100644 skills/capability-evolver/src/gep/llmReview.js
+ create mode 100644 skills/capability-evolver/src/gep/memoryGraph.js
+ create mode 100644 skills/capability-evolver/src/gep/memoryGraphAdapter.js
+ create mode 100644 skills/capability-evolver/src/gep/mutation.js
+ create mode 100644 skills/capability-evolver/src/gep/narrativeMemory.js
+ create mode 100644 skills/capability-evolver/src/gep/paths.js
+ create mode 100644 skills/capability-evolver/src/gep/personality.js
+ create mode 100644 skills/capability-evolver/src/gep/prompt.js
+ create mode 100644 skills/capability-evolver/src/gep/questionGenerator.js
+ create mode 100644 skills/capability-evolver/src/gep/reflection.js
+ create mode 100644 skills/capability-evolver/src/gep/sanitize.js
+ create mode 100644 skills/capability-evolver/src/gep/selector.js
+ create mode 100644 skills/capability-evolver/src/gep/signals.js
+ create mode 100644 skills/capability-evolver/src/gep/skillDistiller.js
+ create mode 100644 skills/capability-evolver/src/gep/skillPublisher.js
+ create mode 100644 skills/capability-evolver/src/gep/solidify.js
+ create mode 100644 skills/capability-evolver/src/gep/strategy.js
+ create mode 100644 skills/capability-evolver/src/gep/taskReceiver.js
+ create mode 100644 skills/capability-evolver/src/gep/validationReport.js
+ create mode 100644 skills/capability-evolver/src/ops/cleanup.js
+ create mode 100644 skills/capability-evolver/src/ops/commentary.js
+ create mode 100644 skills/capability-evolver/src/ops/health_check.js
+ create mode 100644 skills/capability-evolver/src/ops/index.js
+ create mode 100644 skills/capability-evolver/src/ops/innovation.js
+ create mode 100644 skills/capability-evolver/src/ops/lifecycle.js
+ create mode 100644 skills/capability-evolver/src/ops/self_repair.js
+ create mode 100644 skills/capability-evolver/src/ops/skills_monitor.js
+ create mode 100644 skills/capability-evolver/src/ops/trigger.js
+ create mode 100644 skills/capability-evolver/test/a2aProtocol.test.js
+ create mode 100644 skills/capability-evolver/test/candidates.test.js
+ create mode 100644 skills/capability-evolver/test/contentHash.test.js
+ create mode 100644 skills/capability-evolver/test/envFingerprint.test.js
+ create mode 100644 skills/capability-evolver/test/evolvePolicy.test.js
+ create mode 100644 skills/capability-evolver/test/loopMode.test.js
+ create mode 100644 skills/capability-evolver/test/mutation.test.js
+ create mode 100644 skills/capability-evolver/test/sanitize.test.js
+ create mode 100644 skills/capability-evolver/test/selector.test.js
+ create mode 100644 skills/capability-evolver/test/signals.test.js
+ create mode 100644 skills/capability-evolver/test/skillDistiller.test.js
+ create mode 100644 skills/capability-evolver/test/solidifyLearning.test.js
+ create mode 100644 skills/capability-evolver/test/strategy.test.js
+ create mode 100644 skills/capability-evolver/test/validationReport.test.js
+ create mode 100644 "\347\273\237\350\256\241\347\273\223\346\236\234.xlsx"
+To github.com:EasyLiam/java-wiki.git
+   9a123b0..0fea13e  master -> master
+[2026-03-25 08:00:07] GitHub推送成功
+[2026-03-25 08:00:07] 清理30天前的日志文件完成
+[2026-03-25 09:00:01] ========================================
+[2026-03-25 09:00:01] 开始每日面试题更新
+[2026-03-25 09:00:01] ========================================
+[2026-03-25 09:00:01] 
+[2026-03-25 09:00:01] ============================================================
+[2026-03-25 09:00:01] 🔄 每日面试题更新
+[2026-03-25 09:00:01] ============================================================
+[2026-03-25 09:00:01] 
+[2026-03-25 09:00:01] 正在更新 java...
+[2026-03-25 09:00:01]   ✅ 新增 0 道题目，生成文档: java_senior_2026-03-25.md
+[2026-03-25 09:00:01] 正在更新 jvm...
+[2026-03-25 09:00:01]   ✅ 新增 0 道题目，生成文档: jvm_senior_2026-03-25.md
+[2026-03-25 09:00:01] 正在更新 concurrent...
+[2026-03-25 09:00:01]   ✅ 新增 0 道题目，生成文档: concurrent_senior_2026-03-25.md
+[2026-03-25 09:00:01] 正在更新 spring...
+[2026-03-25 09:00:01]   ✅ 新增 0 道题目，生成文档: spring_senior_2026-03-25.md
+[2026-03-25 09:00:01] 正在更新 database...
+[2026-03-25 09:00:01]   ✅ 新增 0 道题目，生成文档: database_senior_2026-03-25.md
+[2026-03-25 09:00:01] 正在更新 cache...
+[2026-03-25 09:00:01]   ✅ 新增 0 道题目，生成文档: cache_senior_2026-03-25.md
+[2026-03-25 09:00:01] 正在更新 distributed...
+[2026-03-25 09:00:01]   ✅ 新增 0 道题目，生成文档: distributed_senior_2026-03-25.md
+[2026-03-25 09:00:01] 正在更新 design...
+[2026-03-25 09:00:01]   ✅ 新增 0 道题目，生成文档: design_senior_2026-03-25.md
+[2026-03-25 09:00:01] 
+[2026-03-25 09:00:01] ============================================================
+[2026-03-25 09:00:01] 📊 更新完成
+[2026-03-25 09:00:01]   总新增题目: 0
+[2026-03-25 09:00:01]   生成文档数: 8
+[2026-03-25 09:00:01] ============================================================
+[2026-03-25 09:00:01] 
+[2026-03-25 09:00:01] 📄 生成的文档:
+[2026-03-25 09:00:01]   - /root/.openclaw/skills/java-backend-interview/output/java_senior_2026-03-25.md
+[2026-03-25 09:00:01]   - /root/.openclaw/skills/java-backend-interview/output/jvm_senior_2026-03-25.md
+[2026-03-25 09:00:01]   - /root/.openclaw/skills/java-backend-interview/output/concurrent_senior_2026-03-25.md
+[2026-03-25 09:00:01]   - /root/.openclaw/skills/java-backend-interview/output/spring_senior_2026-03-25.md
+[2026-03-25 09:00:01]   - /root/.openclaw/skills/java-backend-interview/output/database_senior_2026-03-25.md
+[2026-03-25 09:00:01]   - /root/.openclaw/skills/java-backend-interview/output/cache_senior_2026-03-25.md
+[2026-03-25 09:00:01]   - /root/.openclaw/skills/java-backend-interview/output/distributed_senior_2026-03-25.md
+[2026-03-25 09:00:01]   - /root/.openclaw/skills/java-backend-interview/output/design_senior_2026-03-25.md
+[2026-03-25 09:00:01] 
+[2026-03-25 09:00:01] ========================================
+[2026-03-25 09:00:01] 每日更新完成
+[2026-03-25 09:00:01] ========================================
+[2026-03-25 09:00:01] 开始推送到GitHub...
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+[2026-03-25 09:00:01] 没有文件变更，跳过提交
+[2026-03-25 09:00:01] 清理30天前的日志文件完成

@@ -1,0 +1,41 @@
+{
+  "id": "tavily-search",
+  "name": "Tavily Search",
+  "description": "使用 Tavily API 进行网络搜索",
+  "version": "1.0.0",
+  "commands": [
+    {
+      "name": "search",
+      "description": "使用 Tavily 进行网络搜索",
+      "script": "python3 {baseDir}/scripts/tavily_search.py",
+      "args": [
+        {
+          "name": "query",
+          "type": "string",
+          "description": "搜索查询",
+          "required": true
+        },
+        {
+          "name": "max_results",
+          "type": "number",
+          "description": "最大结果数",
+          "required": false,
+          "default": 5
+        },
+        {
+          "name": "include_answer",
+          "type": "boolean",
+          "description": "包含 AI 答案",
+          "required": false,
+          "default": true
+        }
+      ]
+    }
+  ],
+  "env": {
+    "TAVILY_API_KEY": {
+      "description": "Tavily API Key",
+      "required": true
+    }
+  }
+}

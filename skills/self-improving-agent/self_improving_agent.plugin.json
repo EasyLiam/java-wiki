@@ -1,0 +1,77 @@
+{
+  "id": "self-improving-agent",
+  "name": "Self-Improving + Proactive Agent",
+  "description": "自我改进和主动代理技能，通过学习和分析持续提升服务质量",
+  "version": "1.0.0",
+  "commands": [
+    {
+      "name": "analyze_interaction",
+      "description": "分析用户交互并记录模式",
+      "script": "python3 {baseDir}/scripts/self-improving-agent.py analyze",
+      "args": [
+        {
+          "name": "query",
+          "type": "string",
+          "description": "用户查询",
+          "required": true
+        },
+        {
+          "name": "response",
+          "type": "string",
+          "description": "代理响应",
+          "required": false
+        }
+      ]
+    },
+    {
+      "name": "suggest_improvements",
+      "description": "生成改进建议",
+      "script": "python3 {baseDir}/scripts/self-improving-agent.py suggest",
+      "args": []
+    },
+    {
+      "name": "proactive_suggestions",
+      "description": "获取主动建议",
+      "script": "python3 {baseDir}/scripts/self-improving-agent.py proactive",
+      "args": []
+    },
+    {
+      "name": "learn_pattern",
+      "description": "学习新模式",
+      "script": "python3 {baseDir}/scripts/self-improving-agent.py learn",
+      "args": [
+        {
+          "name": "pattern_name",
+          "type": "string",
+          "description": "模式名称",
+          "required": true
+        },
+        {
+          "name": "pattern_data",
+          "type": "string",
+          "description": "模式数据（JSON 格式）",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "apply_pattern",
+      "description": "应用已学习的模式",
+      "script": "python3 {baseDir}/scripts/self-improving-agent.py apply",
+      "args": [
+        {
+          "name": "pattern_name",
+          "type": "string",
+          "description": "模式名称",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "show_stats",
+      "description": "显示使用统计",
+      "script": "python3 {baseDir}/scripts/self-improving-agent.py stats",
+      "args": []
+    }
+  ]
+}

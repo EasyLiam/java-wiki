@@ -1,0 +1,34 @@
+{
+  "id": "stock-fund-query",
+  "name": "Stock Fund Query",
+  "description": "查询A股股票实时行情、基金持仓和涨跌预测",
+  "version": "1.0.0",
+  "commands": [
+    {
+      "name": "stock_query",
+      "description": "查询A股股票实时行情",
+      "script": "python3 {baseDir}/scripts/stock_query.py",
+      "args": [
+        {
+          "name": "stock",
+          "type": "string",
+          "description": "股票代码，如 000001",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "fund_predict",
+      "description": "预测基金今日涨跌",
+      "script": "python3 {baseDir}/scripts/fund_predict.py",
+      "args": [
+        {
+          "name": "fund_code",
+          "type": "string",
+          "description": "基金代码，如 011399",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

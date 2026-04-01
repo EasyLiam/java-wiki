@@ -1,0 +1,35 @@
+{
+  "id": "find-skills",
+  "name": "Find Skills",
+  "description": "搜索、查找和管理已安装的 OpenClaw 技能",
+  "version": "1.0.0",
+  "commands": [
+    {
+      "name": "search_skills",
+      "description": "搜索已安装的技能",
+      "script": "python3 {baseDir}/scripts/find-skills.py",
+      "args": [
+        {
+          "name": "query",
+          "type": "string",
+          "description": "搜索关键词",
+          "required": false
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "description": "输出格式 (table, json, simple)",
+          "default": "table",
+          "required": false
+        },
+        {
+          "name": "stats",
+          "type": "boolean",
+          "description": "显示统计信息",
+          "default": false,
+          "required": false
+        }
+      ]
+    }
+  ]
+}

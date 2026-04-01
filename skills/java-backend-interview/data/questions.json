@@ -618,7 +618,7 @@
         },
         {
           "q": "网站打开越来越慢，数据库连接超时，怎么排查？",
-          "a": "排查步骤：\n\n1. **确认现象**：\n   - 是所有请求都慢还是部分？\n   - 数据库连接超时还是获取不到连接？\n   - 什么时间开始慢的？有发布变更吗？\n\n2. **检查连接数**：\n   - show processlist; 看当前活跃连接数\n   - show status like 'Threads%'; 看连接状态\n   - 检查最大连接数：show variables like 'max_connections';\n   - 是否有太多Sleep连接？应用连接池配置是否正确？\n\n3. **找慢SQL**：\n   - 开启慢查询日志：slow_query_log = ON\n   - 找出执行时间超过long_query_time的SQL\n   - 分析top慢SQL，看哪些占用时间最长\n\n4. **检查锁等待**：\n   - show engine innodb status\G 看锁信息\n   - information_schema.innodb_locks 查看当前锁\n   - 是否有长事务未提交导致锁不释放？\n   - 是否有死锁？\n\n5. **检查服务器资源**：\n   - CPU使用率：是否飙升？\n   - IO使用率：iostat看是否有IO瓶颈\n   - 内存：是否换页频繁\n   - 网络：是否有丢包延迟\n\n6. **紧急恢复**：\n   -  kill掉大查询/长事务\n   - 增加连接数临时解决\n   - 切从库分流流量\n   - 必要时重启\n\n7. **根因解决**：\n   - 慢SQL优化加索引\n   - 调整连接池参数\n   - 分库分表拆分数据",
+          "a": "排查步骤：\n\n1. **确认现象**：\n   - 是所有请求都慢还是部分？\n   - 数据库连接超时还是获取不到连接？\n   - 什么时间开始慢的？有发布变更吗？\n\n2. **检查连接数**：\n   - show processlist; 看当前活跃连接数\n   - show status like 'Threads%'; 看连接状态\n   - 检查最大连接数：show variables like 'max_connections';\n   - 是否有太多Sleep连接？应用连接池配置是否正确？\n\n3. **找慢SQL**：\n   - 开启慢查询日志：slow_query_log = ON\n   - 找出执行时间超过long_query_time的SQL\n   - 分析top慢SQL，看哪些占用时间最长\n\n4. **检查锁等待**：\n   - show engine innodb status\\G 看锁信息\n   - information_schema.innodb_locks 查看当前锁\n   - 是否有长事务未提交导致锁不释放？\n   - 是否有死锁？\n\n5. **检查服务器资源**：\n   - CPU使用率：是否飙升？\n   - IO使用率：iostat看是否有IO瓶颈\n   - 内存：是否换页频繁\n   - 网络：是否有丢包延迟\n\n6. **紧急恢复**：\n   -  kill掉大查询/长事务\n   - 增加连接数临时解决\n   - 切从库分流流量\n   - 必要时重启\n\n7. **根因解决**：\n   - 慢SQL优化加索引\n   - 调整连接池参数\n   - 分库分表拆分数据",
           "source": "线上问题排查实战",
           "verified": true,
           "practical": true
@@ -1525,6 +1525,220 @@
       "count": 3,
       "new_count": 0,
       "timestamp": "2026-03-24T21:34:58.126291"
+    },
+    {
+      "topic": "java",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-03-25T08:00:01.532085",
+      "quality": "high"
+    },
+    {
+      "topic": "jvm",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-03-25T08:00:01.546334",
+      "quality": "high"
+    },
+    {
+      "topic": "concurrent",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-03-25T08:00:01.549067",
+      "quality": "high"
+    },
+    {
+      "topic": "spring",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-03-25T08:00:01.555637",
+      "quality": "high"
+    },
+    {
+      "topic": "database",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-03-25T08:00:01.562154",
+      "quality": "high"
+    },
+    {
+      "topic": "cache",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-03-25T08:00:01.567953",
+      "quality": "high"
+    },
+    {
+      "topic": "distributed",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-03-25T08:00:01.577056",
+      "quality": "high"
+    },
+    {
+      "topic": "design",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-03-25T08:00:01.582517",
+      "quality": "high"
+    },
+    {
+      "topic": "java",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-25T09:00:01.222536"
+    },
+    {
+      "topic": "jvm",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-25T09:00:01.225590"
+    },
+    {
+      "topic": "concurrent",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-25T09:00:01.230830"
+    },
+    {
+      "topic": "spring",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-25T09:00:01.234931"
+    },
+    {
+      "topic": "database",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-25T09:00:01.238917"
+    },
+    {
+      "topic": "cache",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-25T09:00:01.252241"
+    },
+    {
+      "topic": "distributed",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-25T09:00:01.256348"
+    },
+    {
+      "topic": "design",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-25T09:00:01.261614"
+    },
+    {
+      "topic": "java",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-31T17:00:48.703405"
+    },
+    {
+      "topic": "jvm",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-31T17:00:48.707856"
+    },
+    {
+      "topic": "concurrent",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-31T17:00:48.711215"
+    },
+    {
+      "topic": "spring",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-31T17:00:48.715780"
+    },
+    {
+      "topic": "database",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-31T17:00:48.718897"
+    },
+    {
+      "topic": "cache",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-31T17:00:48.722419"
+    },
+    {
+      "topic": "distributed",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-31T17:00:48.725930"
+    },
+    {
+      "topic": "design",
+      "count": 3,
+      "new_count": 0,
+      "timestamp": "2026-03-31T17:00:48.731848"
+    },
+    {
+      "topic": "java",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-03-31T17:02:21.054015"
+    },
+    {
+      "topic": "java",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-01T08:00:01.477285",
+      "quality": "high"
+    },
+    {
+      "topic": "jvm",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-01T08:00:01.483011",
+      "quality": "high"
+    },
+    {
+      "topic": "concurrent",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-01T08:00:01.486966",
+      "quality": "high"
+    },
+    {
+      "topic": "spring",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-01T08:00:01.489837",
+      "quality": "high"
+    },
+    {
+      "topic": "database",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-01T08:00:01.496168",
+      "quality": "high"
+    },
+    {
+      "topic": "cache",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-01T08:00:01.500894",
+      "quality": "high"
+    },
+    {
+      "topic": "distributed",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-01T08:00:01.505505",
+      "quality": "high"
+    },
+    {
+      "topic": "design",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-01T08:00:01.508226",
+      "quality": "high"
     }
   ]
 }

@@ -1,0 +1,33 @@
+{
+  "id": "ocr-skill",
+  "name": "OCR Text Recognition",
+  "description": "Extract text from images using Tesseract OCR",
+  "version": "1.0.0",
+  "commands": [
+    {
+      "name": "extract_text",
+      "description": "Extract text from an image",
+      "script": "python3 {baseDir}/scripts/ocr_skill.py",
+      "args": [
+        {
+          "name": "image",
+          "type": "string",
+          "description": "Path to the image file",
+          "required": true
+        },
+        {
+          "name": "lang",
+          "type": "string",
+          "description": "Language code (default: eng for English)",
+          "default": "eng"
+        },
+        {
+          "name": "format",
+          "type": "string",
+          "description": "Output format (json, text, md)",
+          "default": "json"
+        }
+      ]
+    }
+  ]
+}
