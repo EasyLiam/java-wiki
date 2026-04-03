@@ -1041,9 +1041,8 @@ function getRandomQuestion() {
     // 收集所有题目
     const allQuestions = [];
     Object.values(questions).forEach(topic => {
-        Object.values(topic).forEach(questionsList => {
-            allQuestions.push(...questionsList);
-        });
+        // topic 直接就是题目数组
+        allQuestions.push(...topic);
     });
     
     if (allQuestions.length === 0) {
