@@ -145,6 +145,7 @@ body {
     gap: 12px;
 }
 
+.btn-random,
 .btn-search,
 .btn-bookmarks,
 .btn-theme {
@@ -161,6 +162,7 @@ body {
     transition: var(--transition);
 }
 
+.btn-random:hover,
 .btn-search:hover,
 .btn-bookmarks:hover,
 .btn-theme:hover {
@@ -852,6 +854,20 @@ body {
     color: white;
     font-size: 12px;
     border-radius: var(--radius-sm);
+}
+
+/* 搜索关键词高亮 */
+.search-highlight {
+    background-color: #fde047;
+    color: #1f2937;
+    padding: 0 2px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+[data-theme="dark"] .search-highlight {
+    background-color: #ca8a04;
+    color: #f9fafb;
 }
 
 .no-results {
