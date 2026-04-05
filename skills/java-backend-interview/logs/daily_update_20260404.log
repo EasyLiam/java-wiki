@@ -62,3 +62,102 @@ hint:
 hint: 	git rm --cached card2a4
 hint: 
 hint: See "git help submodule" for more information.
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   card2a4
+	modified:   script.js
+	new file:   script.js-fix.patch
+	modified:   skills/OCR_SKILL.md
+	modified:   skills/find-skills/SKILL.md
+	modified:   skills/find-skills/find_skills.plugin.json
+	modified:   skills/find-skills/scripts/find-skills.py
+	modified:   skills/java-backend-interview/SKILL.md
+	modified:   skills/java-backend-interview/data/questions.json
+	new file:   skills/java-backend-interview/logs/daily_update_20260404.log
+	new file:   skills/java-backend-interview/output/cache_senior_2026-04-04.md
+	new file:   skills/java-backend-interview/output/concurrent_senior_2026-04-04.md
+	new file:   skills/java-backend-interview/output/database_senior_2026-04-04.md
+	new file:   skills/java-backend-interview/output/design_senior_2026-04-04.md
+	new file:   skills/java-backend-interview/output/distributed_senior_2026-04-04.md
+	new file:   skills/java-backend-interview/output/java_senior_2026-04-04.md
+	new file:   skills/java-backend-interview/output/jvm_senior_2026-04-04.md
+	new file:   skills/java-backend-interview/output/spring_senior_2026-04-04.md
+	modified:   skills/java-backend-interview/plugin.json
+	modified:   skills/java-backend-interview/scripts/daily_update.sh
+	modified:   skills/java-backend-interview/scripts/daily_update_v2.sh
+	modified:   skills/java-backend-interview/scripts/generate_frontend_js.py
+	modified:   skills/java-backend-interview/scripts/interview_gen.py
+	modified:   skills/java-backend-interview/scripts/interview_gen_v2.py
+	modified:   skills/java-backend-interview/scripts/setup_cron.sh
+	modified:   skills/java-backend-interview/scripts/setup_cron_v2.sh
+	modified:   skills/java-backend-interview/scripts/sync_to_website.py
+	modified:   skills/nano-banana-pro/scripts/generate_image.py
+	modified:   skills/ocr.plugin.json
+	modified:   skills/scripts/ocr_skill.py
+	modified:   skills/self-improving-agent/SKILL.md
+	modified:   skills/self-improving-agent/scripts/self-improving-agent.py
+	modified:   skills/self-improving-agent/self_improving_agent.plugin.json
+	modified:   skills/sherpa-onnx-tts/bin/sherpa-onnx-tts
+	modified:   skills/stock-fund-query/scripts/fund_predict.py
+	modified:   skills/stock-fund-query/scripts/stock_query.py
+	modified:   skills/stock-fund-query/stock_fund_query.plugin.json
+	modified:   skills/tavily-search/SKILL.md
+	modified:   skills/tavily-search/scripts/tavily_search.py
+	modified:   skills/tavily-search/tavily_search.plugin.json
+	modified:   skills/tmux/scripts/find-sessions.sh
+	modified:   skills/tmux/scripts/wait-for-text.sh
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   card2a4 (modified content, untracked content)
+
+[master 1b8a5ca] docs: daily update 2026-04-04
+ 42 files changed, 2929 insertions(+), 68 deletions(-)
+ create mode 160000 card2a4
+ create mode 100644 script.js-fix.patch
+ mode change 100755 => 100644 skills/OCR_SKILL.md
+ mode change 100755 => 100644 skills/find-skills/SKILL.md
+ mode change 100755 => 100644 skills/find-skills/find_skills.plugin.json
+ mode change 100755 => 100644 skills/find-skills/scripts/find-skills.py
+ mode change 100755 => 100644 skills/java-backend-interview/SKILL.md
+ mode change 100755 => 100644 skills/java-backend-interview/data/questions.json
+ create mode 100644 skills/java-backend-interview/logs/daily_update_20260404.log
+ create mode 100644 skills/java-backend-interview/output/cache_senior_2026-04-04.md
+ create mode 100644 skills/java-backend-interview/output/concurrent_senior_2026-04-04.md
+ create mode 100644 skills/java-backend-interview/output/database_senior_2026-04-04.md
+ create mode 100644 skills/java-backend-interview/output/design_senior_2026-04-04.md
+ create mode 100644 skills/java-backend-interview/output/distributed_senior_2026-04-04.md
+ create mode 100644 skills/java-backend-interview/output/java_senior_2026-04-04.md
+ create mode 100644 skills/java-backend-interview/output/jvm_senior_2026-04-04.md
+ create mode 100644 skills/java-backend-interview/output/spring_senior_2026-04-04.md
+ mode change 100755 => 100644 skills/java-backend-interview/plugin.json
+ mode change 100755 => 100644 skills/java-backend-interview/scripts/daily_update.sh
+ mode change 100755 => 100644 skills/java-backend-interview/scripts/daily_update_v2.sh
+ mode change 100755 => 100644 skills/java-backend-interview/scripts/generate_frontend_js.py
+ mode change 100755 => 100644 skills/java-backend-interview/scripts/interview_gen.py
+ mode change 100755 => 100644 skills/java-backend-interview/scripts/interview_gen_v2.py
+ mode change 100755 => 100644 skills/java-backend-interview/scripts/setup_cron.sh
+ mode change 100755 => 100644 skills/java-backend-interview/scripts/setup_cron_v2.sh
+ mode change 100755 => 100644 skills/java-backend-interview/scripts/sync_to_website.py
+ mode change 100755 => 100644 skills/nano-banana-pro/scripts/generate_image.py
+ mode change 100755 => 100644 skills/ocr.plugin.json
+ mode change 100755 => 100644 skills/scripts/ocr_skill.py
+ mode change 100755 => 100644 skills/self-improving-agent/SKILL.md
+ mode change 100755 => 100644 skills/self-improving-agent/scripts/self-improving-agent.py
+ mode change 100755 => 100644 skills/self-improving-agent/self_improving_agent.plugin.json
+ mode change 100755 => 100644 skills/sherpa-onnx-tts/bin/sherpa-onnx-tts
+ mode change 100755 => 100644 skills/stock-fund-query/scripts/fund_predict.py
+ mode change 100755 => 100644 skills/stock-fund-query/scripts/stock_query.py
+ mode change 100755 => 100644 skills/stock-fund-query/stock_fund_query.plugin.json
+ mode change 100755 => 100644 skills/tavily-search/SKILL.md
+ mode change 100755 => 100644 skills/tavily-search/scripts/tavily_search.py
+ mode change 100755 => 100644 skills/tavily-search/tavily_search.plugin.json
+ mode change 100755 => 100644 skills/tmux/scripts/find-sessions.sh
+ mode change 100755 => 100644 skills/tmux/scripts/wait-for-text.sh
+To github.com:EasyLiam/java-wiki.git
+   dd0f6c8..1b8a5ca  master -> master
+[2026-04-04 08:00:07] GitHub推送成功
+[2026-04-04 08:00:07] 清理30天前的日志文件完成
