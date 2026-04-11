@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-sys.path.insert(0, '/root/.openclaw/skills/stock-fund-query/scripts')
+sys.path.insert(0, '/home/liam/.openclaw/workspace/skills/stock-fund-query/scripts')
 from fund_realtime import get_fund_realtime
 
 # 持仓数据从文件读取
