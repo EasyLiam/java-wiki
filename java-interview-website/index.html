@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaBackend 面试题库 - 程序员进阶之路</title>
-    <meta name="description" content="专注于Java后端工程师面试题库，系统化整理Java后端知识体系，助力求职面试成功">
+    <title>JavaBackend 后端知识库 - 程序员进阶之路</title>
+    <meta name="description" content="专注于后端开发者知识库，系统化整理后端知识体系，助力技术成长">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -52,7 +52,7 @@
             </div>
             <div class="search-input-wrapper">
                 <i class="fas fa-search search-icon"></i>
-                <input type="text" id="searchInput" placeholder="输入关键词搜索面试题...">
+                <input type="text" id="searchInput" placeholder="输入关键词搜索知识点...">
             </div>
             <div class="search-results" id="searchResults"></div>
         </div>
@@ -64,15 +64,15 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        <span class="gradient-text">Java后端面试题库</span>
+                        <span class="gradient-text">Java后端知识库</span>
                     </h1>
                     <p class="hero-subtitle">
-                        系统化整理 Java 后端知识体系，每日更新最新面试题，助力你斩获心仪Offer
+                        系统化整理 Java 后端知识体系，每日更新最新知识点，助力技术成长与进阶
                     </p>
                     <div class="hero-actions">
                         <a href="#topics" class="btn btn-primary">
                             <i class="fas fa-book-open"></i>
-                            开始刷题
+                            开始浏览
                         </a>
                         <a href="#knowledge" class="btn btn-secondary">
                             <i class="fas fa-map"></i>
@@ -82,15 +82,15 @@
                     <div class="hero-stats">
                         <div class="stat">
                             <span class="stat-number" id="totalQuestions">0</span>
-                            <span class="stat-label">精选题目</span>
+                            <span class="stat-label">精选知识点</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number" id="totalTopics">8</span>
+                            <span class="stat-number" id="totalTopics">11</span>
                             <span class="stat-label">知识分类</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number" id="dailyUpdate">每日更新</span>
-                            <span class="stat-label">新鲜题目</span>
+                            <span class="stat-label">新鲜内容</span>
                         </div>
                     </div>
                 </div>
@@ -102,14 +102,14 @@
                                 <span class="dot yellow"></span>
                                 <span class="dot green"></span>
                             </div>
-                            <span class="filename">InterviewQuestion.java</span>
+                            <span class="filename">KnowledgeBase.java</span>
                         </div>
                         <div class="code-body">
-                            <pre><span class="keyword">public class</span> <span class="class-name">Interview</span> {
+                            <pre><span class="keyword">public class</span> <span class="class-name">KnowledgeBase</span> {
   <span class="keyword">public static void</span> <span class="method">main</span>(String[] args) {
-    <span class="function">prepare</span>();
-    <span class="keyword">if</span> (<span class="variable">you</span>.<span class="method">study</span>()) {
-      <span class="function">getOffer</span>(); <span class="comment">// ✓ 成功上岸</span>
+    <span class="function">study</span>();
+    <span class="keyword">if</span> (<span class="variable">you</span>.<span class="method">keepGoing</span>()) {
+      <span class="function">levelUp</span>(); <span class="comment">// ✓ 持续进阶</span>
     }
   }
 }</pre>
@@ -124,8 +124,8 @@
     <section class="topics section" id="topics">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">题库分类</h2>
-                <p class="section-subtitle">按知识模块分类，针对性刷题更高效</p>
+                <h2 class="section-title">知识分类</h2>
+                <p class="section-subtitle">按知识模块分类，系统化学习更高效</p>
             </div>
             <div class="topics-grid" id="topicsGrid">
                 <!-- 主题卡片会通过JS动态生成 -->
@@ -247,6 +247,42 @@
                         </ul>
                     </div>
                 </div>
+                <div class="knowledge-category">
+                    <div class="category-header">
+                        <i class="fas fa-cubes"></i>
+                        <h3>中间件组件</h3>
+                        <i class="fas fa-chevron-down toggle"></i>
+                    </div>
+                    <div class="category-content active">
+                        <ul class="knowledge-list">
+                            <li>Nacos 服务发现与配置</li>
+                            <li>Eureka/Consul 对比</li>
+                            <li>Spring Cloud Gateway 网关</li>
+                            <li>Apollo 配置中心</li>
+                            <li>SkyWalking 链路追踪</li>
+                            <li>Sentinel 限流熔断</li>
+                            <li>XXL-Job 任务调度</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="knowledge-category">
+                    <div class="category-header">
+                        <i class="fab fa-docker"></i>
+                        <h3>云原生</h3>
+                        <i class="fas fa-chevron-down toggle"></i>
+                    </div>
+                    <div class="category-content active">
+                        <ul class="knowledge-list">
+                            <li>Docker 容器原理</li>
+                            <li>Kubernetes 架构设计</li>
+                            <li>Pod 与容器设计</li>
+                            <li>Service 与 Ingress</li>
+                            <li>ConfigMap 与 Secret</li>
+                            <li>Helm 包管理</li>
+                            <li>微服务部署最佳实践</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -258,7 +294,7 @@
                 <div class="about-card">
                     <i class="fas fa-bullseye"></i>
                     <h3>每日更新</h3>
-                    <p>每日自动爬取整理最新面试题，保持题库新鲜度</p>
+                    <p>每日自动搜索整理最新知识点，保持知识库新鲜度</p>
                 </div>
                 <div class="about-card">
                     <i class="fas fa-filter"></i>
@@ -267,8 +303,8 @@
                 </div>
                 <div class="about-card">
                     <i class="fas fa-check-double"></i>
-                    <h3>详细解答</h3>
-                    <p>每道题都配有详细解答，不仅知其然更知其所以然</p>
+                    <h3>详细解析</h3>
+                    <p>每个知识点都配有详细解析，不仅知其然更知其所以然</p>
                 </div>
             </div>
         </div>
@@ -278,7 +314,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2026 JavaBackend Interview. Built with <i class="fas fa-heart"></i> for Java Developers.</p>
+                <p>&copy; 2026 JavaBackend Knowledge Base. Built with <i class="fas fa-heart"></i> for Backend Developers.</p>
                 <div class="footer-links">
                     <a href="#"><i class="fab fa-github"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>

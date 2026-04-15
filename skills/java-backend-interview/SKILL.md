@@ -1,21 +1,21 @@
 ---
 name: "java-backend-interview"
-description: "Java后端工程师面试题生成与知识体系整理。当用户需要Java面试题、后端知识体系、技术栈学习时调用此技能。"
+description: "Java后端工程师知识库整理与知识体系构建。当需要后端知识库、知识体系整理、技术栈学习时调用此技能。"
 user-invocable: true
 metadata: {"openclaw": {"emoji": "☕"}}
 ---
 
-# Java后端面试题技能
+# Java后端知识库技能
 
-为8年工作经验的Java后端工程师提供面试题生成和知识体系整理服务。
+为后端开发工程师提供系统化知识库整理和知识体系构建服务。
 
 ## 功能特点
 
-- 📝 **面试题生成** - 按难度和主题生成面试题
-- 📚 **知识体系整理** - 系统化Java后端知识结构
-- 🎯 **专项训练** - 针对特定技术栈深入练习
+- 📝 **知识点整理** - 按难度和主题整理后端知识点
+- 📚 **知识体系构建** - 系统化后端技术知识结构
+- 🎯 **专项深入** - 针对特定技术栈深入整理
 - 📊 **难度分级** - 初级/中级/高级/架构师级别
-- 🔄 **每日更新** - 自动搜索新题目并更新知识库
+- 🔄 **每日更新** - 自动搜索新知识点并更新知识库
 - 📄 **文档输出** - 自动生成Markdown文档
 
 ## 知识体系覆盖
@@ -50,46 +50,52 @@ metadata: {"openclaw": {"emoji": "☕"}}
 - 限流熔断降级
 - 分布式ID生成
 
+### 中间件与组件
+- 网关与服务发现（Spring Cloud Gateway、Nacos、Eureka）
+- 配置中心（Nacos、Apollo、Spring Cloud Config）
+- 链路追踪（Sleuth、Zipkin、SkyWalking）
+- 容器化（Docker、Kubernetes）
+
 ## 使用方法
 
 ### 命令行使用
 
 ```bash
-# 生成随机面试题
+# 生成随机知识点
 python3 ~/.openclaw/skills/java-backend-interview/scripts/interview_gen.py --random
 
-# 按主题生成面试题
+# 按主题整理知识点
 python3 ~/.openclaw/skills/java-backend-interview/scripts/interview_gen.py --topic jvm
 
-# 按难度生成面试题
+# 按难度整理知识点
 python3 ~/.openclaw/skills/java-backend-interview/scripts/interview_gen.py --level senior
 
 # 查看知识体系
 python3 ~/.openclaw/skills/java-backend-interview/scripts/interview_gen.py --knowledge
 
-# 专项练习
+# 专项整理
 python3 ~/.openclaw/skills/java-backend-interview/scripts/interview_gen.py --topic spring --count 5
 
-# 每日更新（搜索新题目并生成文档）
+# 每日更新（搜索新知识点并生成文档）
 python3 ~/.openclaw/skills/java-backend-interview/scripts/interview_gen.py --daily
 
 # 更新特定主题并生成文档
-python3 ~/.openclaw/skills/java-backend-interview/scripts/interview_gen.py --update --topic jvm --output jvm_questions.md
+python3 ~/.openclaw/skills/java-backend-interview/scripts/interview_gen.py --update --topic jvm --output jvm_notes.md
 
-# 生成面试题并输出到文档
+# 整理知识点并输出到文档
 python3 ~/.openclaw/skills/java-backend-interview/scripts/interview_gen.py --topic concurrent --count 5 --output concurrent.md
 ```
 
 ### 在对话中使用
 
 直接询问：
-- "给我出几道JVM面试题"
-- "Spring Boot高级面试题有哪些"
-- "分布式系统设计面试题"
+- "给我整理一些JVM知识点"
+- "Spring Boot高级知识点有哪些"
+- "分布式系统设计知识点"
 - "帮我整理MySQL优化知识体系"
-- "来5道高难度并发编程面试题"
-- "每日更新面试题"
-- "搜索新的Redis面试题并生成文档"
+- "来5个高难度并发编程知识点"
+- "每日更新知识库"
+- "搜索新的Redis知识点并生成文档"
 
 ## 难度等级
 
@@ -116,7 +122,7 @@ python3 ~/.openclaw/skills/java-backend-interview/scripts/interview_gen.py --top
 ## 每日更新功能
 
 使用 `--daily` 参数可以：
-1. 自动搜索各主题的最新面试题
+1. 自动搜索各主题的最新知识点
 2. 更新知识库（自动去重）
 3. 生成每日Markdown文档
 4. 记录更新历史
@@ -138,7 +144,7 @@ bash setup_cron.sh
 ### 定时任务说明
 
 - **执行时间**: 每天上午 9:00
-- **执行内容**: 自动搜索并更新所有主题的面试题
+- **执行内容**: 自动搜索并更新所有主题的知识点
 - **日志位置**: `~/.openclaw/skills/java-backend-interview/logs/`
 - **日志保留**: 自动清理30天前的日志
 
@@ -177,13 +183,13 @@ CRON_JOB="0 */12 * * * /bin/bash $SCRIPT_DIR/daily_update.sh"
 
 自动生成的Markdown文档包含：
 - 标题和生成时间
-- 面试题目和详细答案
+- 知识题目和详细解析
 - 扩展学习建议
 
 ## 注意事项
 
-- 面试题基于真实面试场景整理
+- 知识点基于真实后端开发场景整理
 - 知识体系按照企业实际需求组织
-- 建议结合实际项目经验回答
-- 高级题目需要深入理解原理
-- 每日更新会自动去重，避免重复题目
+- 建议结合实际项目经验理解
+- 高级知识点需要深入理解原理
+- 每日更新会自动去重，避免重复内容

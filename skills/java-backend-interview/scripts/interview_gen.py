@@ -27,21 +27,24 @@ def save_data(data):
     with open(DATA_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-def search_interview_questions(topic, count=5):
+def search_knowledge_points(topic, count=5):
     questions = []
     
     search_queries = {
-        'java': 'Java后端面试题 高级 2024',
-        'jvm': 'JVM调优面试题 高级',
-        'concurrent': 'Java并发编程面试题 高级',
-        'spring': 'Spring Boot面试题 高级',
-        'database': 'MySQL数据库面试题 高级',
-        'cache': 'Redis缓存面试题 高级',
-        'distributed': '分布式系统面试题 高级',
-        'design': '系统设计面试题 高级'
+        'java': 'Java后端知识点 高级 2024',
+        'jvm': 'JVM调优知识点 高级',
+        'concurrent': 'Java并发编程知识点 高级',
+        'spring': 'Spring Boot知识点 高级',
+        'database': 'MySQL数据库知识点 高级',
+        'cache': 'Redis缓存知识点 高级',
+        'distributed': '分布式系统知识点 高级',
+        'design': '系统设计知识点 高级',
+        'middleware': '后端中间件知识点 高级',
+        'gateway': 'API网关服务发现知识点',
+        'container': 'Docker Kubernetes知识点 高级'
     }
     
-    query = search_queries.get(topic, f'{topic}面试题 高级')
+    query = search_queries.get(topic, f'{topic}知识点 高级')
     
     sample_questions = {
         'java': [
@@ -123,7 +126,10 @@ def generate_markdown_doc(questions, topic, level, output_file=None):
         'database': '数据库技术',
         'cache': '缓存技术',
         'distributed': '分布式系统',
-        'design': '系统设计'
+        'design': '系统设计',
+        'middleware': '中间件',
+        'gateway': '网关与服务发现',
+        'container': '容器化与云原生'
     }
     
     level_names = {
@@ -133,7 +139,7 @@ def generate_markdown_doc(questions, topic, level, output_file=None):
         'architect': '架构师'
     }
     
-    content = f"""# {topic_names.get(topic, topic)} - {level_names.get(level, level)}面试题
+    content = f"""# {topic_names.get(topic, topic)} - {level_names.get(level, level)}知识点
 
 > 生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 > 题目数量: {len(questions)}
@@ -159,7 +165,7 @@ def generate_markdown_doc(questions, topic, level, output_file=None):
 
 ---
 
-*本文档由 Java后端面试题技能 自动生成*
+*本文档由 Java后端知识点技能 自动生成*
 """
     
     with open(output_file, 'w', encoding='utf-8') as f:
@@ -220,13 +226,13 @@ def generate_questions(data, topic=None, level='senior', count=3):
     if topic:
         topic_questions = questions.get(topic, {})
         if not topic_questions:
-            print(f"未找到主题 '{topic}' 的面试题")
+            print(f"未找到主题 '{topic}' 的知识点")
             print(f"可用主题: {', '.join(questions.keys())}")
             return None
         
         level_questions = topic_questions.get(level, [])
         if not level_questions:
-            print(f"未找到主题 '{topic}' 难度 '{level}' 的面试题")
+            print(f"未找到主题 '{topic}' 难度 '{level}' 的知识点")
             available_levels = list(topic_questions.keys())
             print(f"可用难度: {', '.join(available_levels)}")
             return None
@@ -237,7 +243,7 @@ def generate_questions(data, topic=None, level='senior', count=3):
         topic_name = ks.get(topic, {}).get('name', topic)
         
         print("\n" + "="*60)
-        print(f"📝 {topic_name} - {level.upper()} 面试题")
+        print(f"📝 {topic_name} - {level.upper()} 知识点")
         print("="*60 + "\n")
         
         for i, q in enumerate(selected, 1):
@@ -255,7 +261,7 @@ def generate_questions(data, topic=None, level='senior', count=3):
                     all_questions.append((t, q))
         
         if not all_questions:
-            print(f"未找到难度 '{level}' 的面试题")
+            print(f"未找到难度 '{level}' 的知识点")
             return None
         
         selected = random.sample(all_questions, min(count, len(all_questions)))
@@ -263,7 +269,7 @@ def generate_questions(data, topic=None, level='senior', count=3):
         ks = data.get('knowledge_system', {})
         
         print("\n" + "="*60)
-        print(f"📝 随机面试题 - {level.upper()}")
+        print(f"📝 随机知识点 - {level.upper()}")
         print("="*60 + "\n")
         
         for i, (t, q) in enumerate(selected, 1):
@@ -277,12 +283,12 @@ def generate_questions(data, topic=None, level='senior', count=3):
 
 def daily_update(topics=None, count_per_topic=3):
     if topics is None:
-        topics = ['java', 'jvm', 'concurrent', 'spring', 'database', 'cache', 'distributed', 'design']
+        topics = ['java', 'jvm', 'concurrent', 'spring', 'database', 'cache', 'distributed', 'design', 'middleware', 'gateway', 'container']
     
     data = load_data()
     
     print("\n" + "="*60)
-    print("🔄 每日面试题更新")
+    print("🔄 每日知识点更新")
     print("="*60 + "\n")
     
     total_new = 0
@@ -291,7 +297,7 @@ def daily_update(topics=None, count_per_topic=3):
     for topic in topics:
         print(f"正在更新 {topic}...")
         
-        new_questions = search_interview_questions(topic, count_per_topic)
+        new_questions = search_knowledge_points(topic, count_per_topic)
         
         if new_questions:
             new_count = update_knowledge_base(data, topic, new_questions)
@@ -300,7 +306,7 @@ def daily_update(topics=None, count_per_topic=3):
             doc_file = generate_markdown_doc(new_questions, topic, 'senior')
             generated_docs.append(doc_file)
             
-            print(f"  ✅ 新增 {new_count} 道题目，生成文档: {os.path.basename(doc_file)}")
+            print(f"  ✅ 新增 {new_count} 个知识点，生成文档: {os.path.basename(doc_file)}")
         else:
             print(f"  ⏭️ 跳过 {topic}")
     
@@ -319,21 +325,21 @@ def daily_update(topics=None, count_per_topic=3):
     return total_new, generated_docs
 
 def main():
-    parser = argparse.ArgumentParser(description='Java后端面试题生成器')
+    parser = argparse.ArgumentParser(description='Java后端知识点生成器')
     parser.add_argument('--topic', '-t', type=str, 
-                        choices=['java', 'jvm', 'concurrent', 'spring', 'database', 'cache', 'distributed', 'design'],
-                        help='面试题主题')
+                        choices=['java', 'jvm', 'concurrent', 'spring', 'database', 'cache', 'distributed', 'design', 'middleware', 'gateway', 'container'],
+                        help='知识点主题')
     parser.add_argument('--level', '-l', type=str, default='senior',
                         choices=['junior', 'middle', 'senior', 'architect'],
                         help='难度等级 (默认: senior)')
     parser.add_argument('--count', '-c', type=int, default=3,
                         help='生成题目数量 (默认: 3)')
     parser.add_argument('--random', '-r', action='store_true',
-                        help='随机生成面试题')
+                        help='随机生成知识点')
     parser.add_argument('--knowledge', '-k', action='store_true',
                         help='显示知识体系')
     parser.add_argument('--daily', '-d', action='store_true',
-                        help='每日更新面试题')
+                        help='每日更新知识点')
     parser.add_argument('--output', '-o', type=str,
                         help='输出文档路径')
     parser.add_argument('--update', '-u', action='store_true',
