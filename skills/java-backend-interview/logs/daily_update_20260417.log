@@ -48,3 +48,47 @@
 [2026-04-17 08:00:03] ✓ 生成完成！总共 165 道题目
 [2026-04-17 08:00:03] ✓ 输出文件: /home/liam/.openclaw/workspace/script.js
 [2026-04-17 08:00:03] 开始推送到GitHub...
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   skills/java-backend-interview/data/questions.json
+	modified:   skills/java-backend-interview/logs/daily_update_20260416.log
+	new file:   skills/java-backend-interview/logs/daily_update_20260417.log
+	new file:   skills/java-backend-interview/output/cache_senior_2026-04-17.md
+	new file:   skills/java-backend-interview/output/concurrent_senior_2026-04-17.md
+	new file:   skills/java-backend-interview/output/database_senior_2026-04-17.md
+	new file:   skills/java-backend-interview/output/design_senior_2026-04-17.md
+	new file:   skills/java-backend-interview/output/distributed_senior_2026-04-17.md
+	new file:   skills/java-backend-interview/output/java_senior_2026-04-17.md
+	new file:   skills/java-backend-interview/output/jvm_senior_2026-04-17.md
+	new file:   skills/java-backend-interview/output/spring_senior_2026-04-17.md
+	new file:   soft-exam-programmer.md
+	new file:   tmp/daily_fund_report.txt
+	modified:   tmp/fund_report.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   card2a4 (modified content, untracked content)
+
+[master b9ae9aa] docs: daily update 2026-04-17
+ 14 files changed, 3634 insertions(+), 103 deletions(-)
+ create mode 100644 skills/java-backend-interview/logs/daily_update_20260417.log
+ create mode 100644 skills/java-backend-interview/output/cache_senior_2026-04-17.md
+ create mode 100644 skills/java-backend-interview/output/concurrent_senior_2026-04-17.md
+ create mode 100644 skills/java-backend-interview/output/database_senior_2026-04-17.md
+ create mode 100644 skills/java-backend-interview/output/design_senior_2026-04-17.md
+ create mode 100644 skills/java-backend-interview/output/distributed_senior_2026-04-17.md
+ create mode 100644 skills/java-backend-interview/output/java_senior_2026-04-17.md
+ create mode 100644 skills/java-backend-interview/output/jvm_senior_2026-04-17.md
+ create mode 100644 skills/java-backend-interview/output/spring_senior_2026-04-17.md
+ create mode 100644 soft-exam-programmer.md
+ create mode 100644 tmp/daily_fund_report.txt
+ssh: Could not resolve hostname github.com: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[2026-04-17 08:00:14] GitHub推送失败，请检查配置
+[2026-04-17 08:00:14] 清理30天前的日志文件完成
