@@ -2635,6 +2635,62 @@
       "new_count": 0,
       "timestamp": "2026-04-18T08:00:01.943419",
       "quality": "high"
+    },
+    {
+      "topic": "java",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-19T08:00:01.611258",
+      "quality": "high"
+    },
+    {
+      "topic": "jvm",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-19T08:00:01.620014",
+      "quality": "high"
+    },
+    {
+      "topic": "concurrent",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-19T08:00:01.635939",
+      "quality": "high"
+    },
+    {
+      "topic": "spring",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-19T08:00:01.644682",
+      "quality": "high"
+    },
+    {
+      "topic": "database",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-19T08:00:01.653267",
+      "quality": "high"
+    },
+    {
+      "topic": "cache",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-19T08:00:01.660544",
+      "quality": "high"
+    },
+    {
+      "topic": "distributed",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-19T08:00:01.668035",
+      "quality": "high"
+    },
+    {
+      "topic": "design",
+      "count": 5,
+      "new_count": 0,
+      "timestamp": "2026-04-19T08:00:01.674948",
+      "quality": "high"
     }
   ]
 }
