@@ -48,3 +48,40 @@
 [2026-04-28 08:00:02] ✓ 生成完成！总共 165 道题目
 [2026-04-28 08:00:02] ✓ 输出文件: /home/liam/.openclaw/workspace/script.js
 [2026-04-28 08:00:02] 开始推送到GitHub...
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   memory/2026-03-24-fund-holdings.md
+	modified:   skills/java-backend-interview/data/questions.json
+	modified:   skills/java-backend-interview/logs/daily_update_20260427.log
+	new file:   skills/java-backend-interview/logs/daily_update_20260428.log
+	new file:   skills/java-backend-interview/output/cache_senior_2026-04-28.md
+	new file:   skills/java-backend-interview/output/concurrent_senior_2026-04-28.md
+	new file:   skills/java-backend-interview/output/database_senior_2026-04-28.md
+	new file:   skills/java-backend-interview/output/design_senior_2026-04-28.md
+	new file:   skills/java-backend-interview/output/distributed_senior_2026-04-28.md
+	new file:   skills/java-backend-interview/output/java_senior_2026-04-28.md
+	new file:   skills/java-backend-interview/output/jvm_senior_2026-04-28.md
+	new file:   skills/java-backend-interview/output/spring_senior_2026-04-28.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   card2a4 (modified content, untracked content)
+
+[master 52c8575] docs: daily update 2026-04-28
+ 12 files changed, 2955 insertions(+), 3 deletions(-)
+ create mode 100644 skills/java-backend-interview/logs/daily_update_20260428.log
+ create mode 100644 skills/java-backend-interview/output/cache_senior_2026-04-28.md
+ create mode 100644 skills/java-backend-interview/output/concurrent_senior_2026-04-28.md
+ create mode 100644 skills/java-backend-interview/output/database_senior_2026-04-28.md
+ create mode 100644 skills/java-backend-interview/output/design_senior_2026-04-28.md
+ create mode 100644 skills/java-backend-interview/output/distributed_senior_2026-04-28.md
+ create mode 100644 skills/java-backend-interview/output/java_senior_2026-04-28.md
+ create mode 100644 skills/java-backend-interview/output/jvm_senior_2026-04-28.md
+ create mode 100644 skills/java-backend-interview/output/spring_senior_2026-04-28.md
+To github.com:EasyLiam/java-wiki.git
+   be434e9..52c8575  master -> master
+[2026-04-28 08:00:10] GitHub推送成功
+[2026-04-28 08:00:10] 清理30天前的日志文件完成
